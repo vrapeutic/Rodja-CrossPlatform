@@ -44,12 +44,13 @@ public class WayPointsPath : MonoBehaviour
 
     public void AgentArrivedAtNoneStopPoint()
     {
-        pointIndex++;
+        if(pointIndex < wayPoints.Count-1) pointIndex++;
+        else CanAgentMove = false;
     }
    public void AgentArrivedAtStopPoint()
     {
         CanAgentMove = false;
-        pointIndex ++;
+        if (pointIndex < wayPoints.Count - 1) pointIndex ++;
         Debug.Log("agent arrived");
     }
 

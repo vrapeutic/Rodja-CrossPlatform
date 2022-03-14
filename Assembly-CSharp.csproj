@@ -55,6 +55,8 @@
   <ItemGroup>
     <Compile Include="Assets\Way points\WayPointsPath.cs" />
     <Compile Include="Assets\Way points\WayPoint.cs" />
+    <Compile Include="Assets\Level 2 destractor\DestractorWayPoint.cs" />
+    <Compile Include="Assets\Level 2 destractor\Level2Destractor.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
