@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Invocation\Examples\Scripts\Example.cs" />
+    <Compile Include="Assets\Scripts\ObjectMovement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Invocation\Readme.txt" />
