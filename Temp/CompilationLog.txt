@@ -1,0 +1,24 @@
+# Starting compiling UnityEngine.TestRunner.dll
+D:\parameg\Unity\Hub\unity\2020\2020.3.26f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-eb34a78e1f6641541be149765404cfbd
+# Starting compiling UnityEngine.UI.dll
+D:\parameg\Unity\Hub\unity\2020\2020.3.26f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-0e09ff95bff4089429b66d99072e212a
+# Starting compiling Unity.Timeline.dll
+D:\parameg\Unity\Hub\unity\2020\2020.3.26f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-7d77360b445432747a791451fecb0863
+# Starting compiling Unity.TextMeshPro.dll
+D:\parameg\Unity\Hub\unity\2020\2020.3.26f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-0b3741d28b84f234c9154de7cc73def0
+# Starting compiling Unity.Subsystem.Registration.dll
+D:\parameg\Unity\Hub\unity\2020\2020.3.26f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-c5223286f5622a941998e0f17fc0db21
+# Starting compiling UnityEngine.SpatialTracking.dll
+D:\parameg\Unity\Hub\unity\2020\2020.3.26f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-cfcb09a604a987449a2b39e448965da4
+# Starting compiling Unity.XR.Management.dll
+D:\parameg\Unity\Hub\unity\2020\2020.3.26f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-639db4fdeda84c24586e7ab68888bd27
+# Starting compiling Unity.XR.PicoXR.dll
+D:\parameg\Unity\Hub\unity\2020\2020.3.26f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-b3c925af0aaf11748b45bea766c97857
+# Starting compiling Unity.XR.Oculus.dll
+D:\parameg\Unity\Hub\unity\2020\2020.3.26f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-e09fd7da5807f4949a41a9d410e0c51c
+# Starting compiling UnityEngine.XR.LegacyInputHelpers.dll
+D:\parameg\Unity\Hub\unity\2020\2020.3.26f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-0ea80d0580d30dd479b5108e7360963d
+# Starting compiling Unity.XR.Interaction.Toolkit.dll
+D:\parameg\Unity\Hub\unity\2020\2020.3.26f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-5cebaf429b4182245845fc268c9d9c90
+# Starting compiling Assembly-CSharp.dll
+D:\parameg\Unity\Hub\unity\2020\2020.3.26f1\Editor\Data\Tools\RoslynScripts\unity_csc.bat /noconfig @Temp/UnityTempFile-1e224e41fe2afcd499f79045f0b62383

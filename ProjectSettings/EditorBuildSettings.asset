@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ShowBatteryLevel.unity
-    guid: fd477341c58d0584eb49712879b4227c
+    path: Assets/Scenes/Test Interaction.unity
+    guid: 45ae6e3f06bb62345b76b8b52a2d6e32
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 4d06cb2fb2bc1c34b8b7d4cb1b370091,
       type: 2}
