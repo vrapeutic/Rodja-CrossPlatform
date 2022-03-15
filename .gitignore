@@ -1,2 +1,5 @@
 
 *.meta
+Temp/
+Logs/
+Library/
