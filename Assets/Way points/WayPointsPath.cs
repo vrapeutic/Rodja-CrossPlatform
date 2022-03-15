@@ -12,6 +12,12 @@ public class WayPointsPath : MonoBehaviour
     GameObject wayPointsAgent;
     [SerializeField]
     int agentSpeed;
+    [SerializeField]
+    GameEvent arrivedEvent;
+    [SerializeField]
+    GameEvent winEvent;
+    [SerializeField]
+    GameEvent moveToNextPoint;
     int pointIndex;
     bool CanAgentMove;
     void Start()
@@ -32,16 +38,13 @@ public class WayPointsPath : MonoBehaviour
     {
         if(pointIndex < wayPoints.Count)
         {
+            moveToNextPoint.Raise();
             CanAgentMove = true;
-            Debug.Log("move to next point");
+           // Debug.Log("move to next point");
         }       
     }
 
-    private void AgentArrivedAtPoint()
-    {
-        throw new NotImplementedException();
-    }
-
+   
     public void AgentArrivedAtNoneStopPoint()
     {
         if(pointIndex < wayPoints.Count-1) pointIndex++;
@@ -49,8 +52,10 @@ public class WayPointsPath : MonoBehaviour
     }
    public void AgentArrivedAtStopPoint()
     {
+        arrivedEvent.Raise();
         CanAgentMove = false;
         if (pointIndex < wayPoints.Count - 1) pointIndex ++;
+        else winEvent.Raise();
         Debug.Log("agent arrived");
     }
 
@@ -71,7 +76,7 @@ public class WayPointsPath : MonoBehaviour
 
     private Vector3 GetAgentDirection()
     {
-        Debug.Log("get agent Direction");
+       // Debug.Log("get agent Direction");
         Vector3 dir;
         Vector3 dirNormalized;
         dir = wayPoints[pointIndex].transform.position - wayPointsAgent.transform.position;
