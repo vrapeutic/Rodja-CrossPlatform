@@ -15,7 +15,6 @@ public class ObjectMovement : MonoBehaviour
     float distance;
     public float movementSpeed = 0.25f;
     bool canMove = true;
-
     private void Start()
     {
         startPosition = this.gameObject.transform.position;
