@@ -14,10 +14,11 @@ public class LimitedInterapution : MonoBehaviour
     {
         while (true)
         {
-
             if (!this.GetComponentInChildren<Renderer>().IsVisibleFrom(Camera.main))
             {
-                TovaDataGet.ReturnTovaData().SetTargetsCounterEnabled(true);
+                TovaDataGet.ReturnTovaData().SetHitsCounterEnabled(true);
+               // Debug.Log(TovaDataGet.ReturnTovaData().GetNumOfHits());
+
             }
             yield return new WaitForSeconds(3);
 
