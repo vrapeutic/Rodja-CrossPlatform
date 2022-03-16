@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class WayPointsPath : MonoBehaviour
 {
+    
     [SerializeField]
     List<WayPoint> wayPoints;
     [SerializeField]
