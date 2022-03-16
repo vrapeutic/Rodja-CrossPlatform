@@ -56,18 +56,27 @@
     <Compile Include="Assets\Way points\WayPoint.cs" />
     <Compile Include="Assets\Tova\Scripts\PerformanceData\HandToolsData.cs" />
     <Compile Include="Assets\Tova\Scripts\PerformanceData\TargetsData.cs" />
+    <Compile Include="Assets\Scripts\TestEvents.cs" />
     <Compile Include="Assets\Invocation\Examples\Scripts\Example.cs" />
+    <Compile Include="Assets\Scripts\JewelryAnimationHandler.cs" />
     <Compile Include="Assets\Tova\Scripts\Variables\ImplusivityScore.cs" />
     <Compile Include="Assets\Scripts\ObjectMovement.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\OpenNextJewelry.cs" />
+    <Compile Include="Assets\Scripts\TestTimer.cs" />
     <Compile Include="Assets\Level 2 destractor\Level2Destractor.cs" />
     <Compile Include="Assets\Tova\Scripts\TovaData.cs" />
+    <Compile Include="Assets\Event system\EventListner.cs" />
     <Compile Include="Assets\Tova\Scripts\TovaDataSet.cs" />
     <Compile Include="Assets\Level 2 destractor\DestractorWayPoint.cs" />
     <Compile Include="Assets\Tova\Scripts\Variables\OmissionScore.cs" />
+    <Compile Include="Assets\Scripts\JewelryManager.cs" />
     <Compile Include="Assets\Way points\WayPointsPath.cs" />
+    <Compile Include="Assets\Event system\GameEvent.cs" />
     <Compile Include="Assets\MenuManger.cs" />
     <Compile Include="Assets\Tova\Scripts\Variables\ResponseTime.cs" />
     <Compile Include="Assets\Tova\Scripts\TovaDataGet.cs" />
+    <Compile Include="Assets\Scripts\ScaleHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Invocation\Readme.txt" />
