@@ -38084,9 +38084,9 @@ MonoBehaviour:
   wayPoints: []
   wayPointsAgent: {fileID: 125863789}
   agentSpeed: 3
-  arrivedEvent: {fileID: 0}
-  winEvent: {fileID: 0}
-  moveToNextPoint: {fileID: 0}
+  arrivedEvent: {fileID: 11400000, guid: 6effd05160547524fb33a8d443e4f23a, type: 2}
+  winEvent: {fileID: 11400000, guid: cd307e5d828eae640a865e251f3e7cc6, type: 2}
+  moveToNextPoint: {fileID: 11400000, guid: 0c0b59748e5440742a2d815e0ffb22f0, type: 2}
 --- !u!114 &1730887130
 MonoBehaviour:
   m_ObjectHideFlags: 0
