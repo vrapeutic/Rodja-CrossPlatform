@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LimitedInterapution : MonoBehaviour
 {
+    float hitsCounter=0;
 
     private void Start()
     {
@@ -16,8 +17,13 @@ public class LimitedInterapution : MonoBehaviour
         {
             if (!this.GetComponentInChildren<Renderer>().IsVisibleFrom(Camera.main))
             {
-                TovaDataGet.ReturnTovaData().SetHitsCounterEnabled(true);
+                hitsCounter++;
 
+                if (hitsCounter >= 3)
+                { 
+                    TovaDataGet.ReturnTovaData().SetHitsCounterEnabled(true);
+                    hitsCounter = 0;
+                }
             }
             yield return new WaitForSeconds(3);
 
