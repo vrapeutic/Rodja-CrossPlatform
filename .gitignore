@@ -1,0 +1,16 @@
+
+
+*.vs
+*.sln
+*.csproj
+*Rodja-CrossPlatform.sln
+
+UserSettings/
+Temp/UnityLockfile
+Temp/
+Logs/
+Library/
+.vsconfig
+*.sln
+Rodja-CrossPlatform.sln
+*.sln

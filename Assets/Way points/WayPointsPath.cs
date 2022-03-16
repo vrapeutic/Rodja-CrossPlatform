@@ -6,51 +6,57 @@ using UnityEngine;
 
 public class WayPointsPath : MonoBehaviour
 {
+    
     [SerializeField]
-   List <Transform> wayPoints;
+    List<WayPoint> wayPoints;
     [SerializeField]
     GameObject wayPointsAgent;
     [SerializeField]
     int agentSpeed;
+    [SerializeField]
+    GameEvent arrivedEvent;
+    [SerializeField]
+    GameEvent winEvent;
+    [SerializeField]
+    GameEvent moveToNextPoint;
     int pointIndex;
     bool CanAgentMove;
     void Start()
     {
-        wayPoints = this.GetComponentsInChildren<Transform>().ToList();
-        wayPoints.RemoveAt(0);
+        wayPoints = this.GetComponentsInChildren<WayPoint>().ToList();
+        //wayPoints.RemoveAt(0);
         pointIndex = 0;
         CanAgentMove = false;
     }
 
-    public void Constractor(List<Transform> _waypoints)
+    public void Constractor(List<WayPoint> _waypoints)
     {
         wayPoints = _waypoints;
     }
 
-     
-    private void MoveAgentToNextPoint()
+
+    public void MoveAgentToNextPoint()
     {
-        if(pointIndex < wayPoints.Count)
+        if (pointIndex < wayPoints.Count)
         {
+            moveToNextPoint.Raise();
             CanAgentMove = true;
-            Debug.Log("move to next point");
-        }       
+            // Debug.Log("move to next point");
+        }
     }
 
-    private void AgentArrivedAtPoint()
-    {
-        throw new NotImplementedException();
-    }
 
     public void AgentArrivedAtNoneStopPoint()
     {
-        if(pointIndex < wayPoints.Count-1) pointIndex++;
+        if (pointIndex < wayPoints.Count - 1) pointIndex++;
         else CanAgentMove = false;
     }
-   public void AgentArrivedAtStopPoint()
+    public void AgentArrivedAtStopPoint()
     {
+        arrivedEvent.Raise();
         CanAgentMove = false;
-        if (pointIndex < wayPoints.Count - 1) pointIndex ++;
+        if (pointIndex < wayPoints.Count - 1) pointIndex++;
+        else winEvent.Raise();
         Debug.Log("agent arrived");
     }
 
@@ -64,14 +70,14 @@ public class WayPointsPath : MonoBehaviour
     {
         if (CanAgentMove)
         {
-            wayPointsAgent.transform.position += GetAgentDirection() * agentSpeed *Time.fixedDeltaTime;
+            wayPointsAgent.transform.position += GetAgentDirection() * agentSpeed * Time.fixedDeltaTime;
             wayPointsAgent.transform.LookAt(GetAgentDirection());
         }
     }
 
     private Vector3 GetAgentDirection()
     {
-        Debug.Log("get agent Direction");
+        // Debug.Log("get agent Direction");
         Vector3 dir;
         Vector3 dirNormalized;
         dir = wayPoints[pointIndex].transform.position - wayPointsAgent.transform.position;

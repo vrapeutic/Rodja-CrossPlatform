@@ -11,15 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sample.unity
     guid: f696dafe198dc5e4489d9237afc19eb7
-  m_configObjects: {}
-    path: Assets/Scenes/Test Interaction.unity
-    guid: 45ae6e3f06bb62345b76b8b52a2d6e32
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 4d06cb2fb2bc1c34b8b7d4cb1b370091,
       type: 2}
     Unity.XR.PXR.Settings: {fileID: 11400000, guid: d9a359a5c6a899144b24f3312de36deb,
-      type: 2}
-    Unity.XR.PicoXR.Settings: {fileID: 11400000, guid: d9a359a5c6a899144b24f3312de36deb,
-      type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b067780e54343764c87fda655d60c789,
       type: 2}
