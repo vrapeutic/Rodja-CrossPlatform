@@ -10,4 +10,5 @@ Temp/
 Logs/
 Library/
 .vsconfig
-.vsconfig
+Packages/
+
