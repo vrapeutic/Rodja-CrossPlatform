@@ -1,0 +1,11 @@
+
+
+*.vs
+*.sln
+*.csproj
+
+UserSettings/
+Temp/UnityLockfile
+Temp/
+Logs/
+Library/
