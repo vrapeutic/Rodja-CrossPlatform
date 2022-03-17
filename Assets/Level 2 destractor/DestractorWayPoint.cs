@@ -29,7 +29,7 @@ public class DestractorWayPoint : MonoBehaviour
     private void MoveAgentToNextPoint()
     {
             CanAgentMove = true;
-            Debug.Log("move to next point");
+           // Debug.Log("move to next point");
     }
 
     private void GetNextPointIndex()
@@ -43,7 +43,7 @@ public class DestractorWayPoint : MonoBehaviour
     IEnumerator DestractorArrivedAtPoint()
     {
         GetNextPointIndex();
-        Debug.Log("destractor arrived");
+      //  Debug.Log("destractor arrived");
         CanAgentMove = false;
         yield return new WaitForSeconds(2f);
         MoveAgentToNextPoint();
@@ -71,7 +71,7 @@ public class DestractorWayPoint : MonoBehaviour
 
     private Vector3 GetAgentDirection()
     {
-        Debug.Log("get agent Direction");
+       // Debug.Log("get agent Direction");
         Vector3 dir;
         Vector3 dirNormalized;
         Vector3 wayPointNewPosition;
