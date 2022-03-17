@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -26538,7 +26538,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-
 --- !u!1 &1033678620
 GameObject:
   m_ObjectHideFlags: 0
@@ -38158,9 +38157,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1775144377}
-  - component: {fileID: 1775144379}
   - component: {fileID: 1775144378}
   - component: {fileID: 1775144380}
+  - component: {fileID: 1775144379}
   m_Layer: 0
   m_Name: Response time
   m_TagString: Untagged
@@ -38203,15 +38202,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1775144376}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc4ca1851e554d54f8cf6425a8a620a4, type: 3}
+  m_Script: {fileID: 11500000, guid: 0a1ddc80e92e1e342b5c1de1e30c5cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  responseTimeCounter: 0
-  distractorResponseTimeCounter: 0
-  noOfTriesCounter: 0
-  noOfDistractorHitsCounter: 0
-  currentResponseTime: 0
-  currentdistractorResponseTime: 0
+  TAS: 0
+  instractionTime: 5
+  responseDistractorWight: 0.5
+  responseWight: 0.5
 --- !u!114 &1775144380
 MonoBehaviour:
   m_ObjectHideFlags: 0
