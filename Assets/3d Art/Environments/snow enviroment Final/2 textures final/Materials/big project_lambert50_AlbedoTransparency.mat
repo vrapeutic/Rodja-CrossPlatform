@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: big project_lambert1_AlbedoTransparency
+  m_Name: big project_lambert50_AlbedoTransparency
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _ALPHATEST_ON _EMISSION _METALLICGLOSSMAP _NORMALMAP
   m_LightmapFlags: 2
@@ -21,7 +21,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 4c51f482c2e87ab42a40f17a6e3b7014, type: 3}
+        m_Texture: {fileID: 2800000, guid: cf67fd3c75c251d459f9c63b55ab7003, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -37,15 +37,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: 6ad0cce144aeb97409be9392aabe2dae, type: 3}
+        m_Texture: {fileID: 2800000, guid: 61253312e7550244b928d2dd5c992224, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 6ad0cce144aeb97409be9392aabe2dae, type: 3}
+        m_Texture: {fileID: 2800000, guid: 61253312e7550244b928d2dd5c992224, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: cf48e06d8ccdf3340ac789d7b54b793f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2c1ce1485de568a4b8dda5855b281dec, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -75,5 +75,5 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0.122641504, g: 0.122641504, b: 0.122641504, a: 1}
+    - _EmissionColor: {r: 0.16981131, g: 0.16981131, b: 0.16981131, a: 1}
   m_BuildTextureStacks: []
