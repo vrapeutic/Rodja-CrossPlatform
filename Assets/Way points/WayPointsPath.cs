@@ -71,7 +71,8 @@ public class WayPointsPath : MonoBehaviour
         if (CanAgentMove)
         {
             wayPointsAgent.transform.position += GetAgentDirection() * agentSpeed * Time.fixedDeltaTime;
-            wayPointsAgent.transform.LookAt(GetAgentDirection());
+            //wayPointsAgent.transform.LookAt(GetAgentDirection());
+            wayPointsAgent.transform.rotation = Quaternion.Slerp(wayPointsAgent.transform.rotation, Quaternion.LookRotation(GetAgentDirection()), 0.55f);
         }
     }
 
