@@ -11,4 +11,4 @@ Logs/
 Library/
 .vsconfig
 Packages/
-
+obj/
