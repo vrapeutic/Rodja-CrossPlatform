@@ -5,20 +5,27 @@ using System.Linq;
 
 public class ScaleHandler : MonoBehaviour
 {
-    [SerializeField]
-    List<JewelryManager> jewelries;
     int index = 0;
-
+    Vector3 scaleChange;
+    bool runScaleUp = false;
     // Start is called before the first frame update
     void Start()
     {
-        jewelries = this.GetComponentsInChildren<JewelryManager>().ToList();
+        scaleChange = new Vector3(0.5f, 0.5f, 0.5f);
 
     }
-
-    public void ScaleCurrentJewelry()
+    private void Update()
     {
-        jewelries[index].ScaleJewelry();
-        index++;
-    } 
+        if (runScaleUp && this.gameObject.transform.localScale.x <= 1.5f)
+        {
+            this.gameObject.transform.localScale += scaleChange * Time.deltaTime;
+        }
+    }
+    public void ScaleJewelry()
+    {
+        runScaleUp = true;
+        this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
+
+    }
+  
 }

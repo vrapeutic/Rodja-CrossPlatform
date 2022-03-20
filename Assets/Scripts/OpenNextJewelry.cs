@@ -18,7 +18,7 @@ public class OpenNextJewelry : MonoBehaviour
     {
         jewelries = this.GetComponentsInChildren<MeshRenderer>().ToList();
         jewleryInteractor = this.GetComponentsInChildren<XRSimpleInteractable>().ToList();
-        for (int i = 0; i < jewleryInteractor.Count; i++)
+        for (int i = 0; i < jewleryInteractor.Count - 1; i++)
         {
             jewleryInteractor[i + 1].GetComponent<Collider>().enabled = false;
         }
@@ -29,8 +29,19 @@ public class OpenNextJewelry : MonoBehaviour
         if (index < jewelries.Count)
         {
             jewelries[index].enabled = true;
+            RunEffect();
             jewleryInteractor[index].GetComponent<Collider>().enabled = true;
             index++;
         }
+    }
+
+    public void RunEffect()
+    {
+        if (index > 0)
+        {
+            jewelries[index - 1].gameObject.GetComponentInChildren<ParticleSystem>().Play();
+            jewelries[index - 1].gameObject.GetComponentInChildren<ScaleHandler>().ScaleJewelry();
+        }
+        jewelries[index].gameObject.GetComponentInChildren<Light>().enabled = true;
     }
 }
