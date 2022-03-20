@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 //enum MenuVar { Time, Level, Environment, Track ,Npc ,Lang}
@@ -65,5 +66,10 @@ public class MenuManger : MonoBehaviour
     public void SetCollactable_Name(string _name)
     {
         menu.Collectable_name = _name;
+    }
+
+    public void NextLevel(int _index)
+    {
+        SceneManager.LoadScene(_index);
     }
 }

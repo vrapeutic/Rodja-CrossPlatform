@@ -2,23 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TestTimer : MonoBehaviour
+public class Timer : MonoBehaviour
 {
-    [SerializeField]
     float maxTime;
     [SerializeField]
     GameEvent playerLoose;
     [SerializeField]
-    float timer;
+    float timer=0;
 
     private void Start()
     {
-        timer = 0;
+        maxTime = FindObjectOfType<MenuManger>().menu.time;
     }
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
+       if(maxTime!=0) timer += Time.deltaTime;
         if(timer > maxTime) playerLoose.Raise();
     }
 }

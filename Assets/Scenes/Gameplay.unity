@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -568,7 +568,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438c85bfb364b9d41b5d6c0504e94377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jewelries: []
 --- !u!1 &336952113 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6335022699638354023, guid: a1404c4b87af61046b2f7299768c9310,
@@ -593,7 +592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438c85bfb364b9d41b5d6c0504e94377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jewelries: []
 --- !u!1001 &424216241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1331,7 +1329,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438c85bfb364b9d41b5d6c0504e94377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jewelries: []
 --- !u!1 &680770979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,7 +1691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438c85bfb364b9d41b5d6c0504e94377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jewelries: []
 --- !u!1 &780543418 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6335022699638354023, guid: a1404c4b87af61046b2f7299768c9310,
@@ -1719,7 +1715,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438c85bfb364b9d41b5d6c0504e94377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jewelries: []
 --- !u!1001 &986466127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1811,54 +1806,6 @@ PrefabInstance:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
---- !u!1 &1020688218
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1020688220}
-  - component: {fileID: 1020688219}
-  m_Layer: 0
-  m_Name: Tova
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1020688219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020688218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a1ddc80e92e1e342b5c1de1e30c5cfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TAS: 0
-  instractionTime: 5
-  responseDistractorWight: 0.5
-  responseWight: 0.5
---- !u!4 &1020688220
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1020688218}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1775144377}
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1048943014
 GameObject:
   m_ObjectHideFlags: 0
@@ -2853,7 +2800,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438c85bfb364b9d41b5d6c0504e94377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jewelries: []
 --- !u!1 &1730887126
 GameObject:
   m_ObjectHideFlags: 0
@@ -2885,7 +2831,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438c85bfb364b9d41b5d6c0504e94377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jewelries: []
 --- !u!4 &1730887128
 Transform:
   m_ObjectHideFlags: 0
@@ -2950,7 +2895,6 @@ GameObject:
   - component: {fileID: 1775144377}
   - component: {fileID: 1775144378}
   - component: {fileID: 1775144380}
-  - component: {fileID: 1775144379}
   m_Layer: 0
   m_Name: Response time
   m_TagString: Untagged
@@ -2965,12 +2909,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775144376}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1020688220}
-  m_RootOrder: 0
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1775144378
 MonoBehaviour:
@@ -2984,24 +2928,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96a2275c17513ce41b3cab6f062e3f00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1775144379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1775144376}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aebab74d4b1e415418ff08c3632132f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  responseTimeCounter: 0
-  distractorResponseTimeCounter: 0
-  noOfTriesCounter: 0
-  noOfDistractorHitsCounter: 0
-  currentResponseTime: 0
-  currentdistractorResponseTime: 0
 --- !u!114 &1775144380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3151,7 +3077,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c135d75369c2a9d4c9c914b04877b550, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 120
   playerLoose: {fileID: 11400000, guid: 30216b91250804b4b9ca5c95af96d9c7, type: 2}
   timer: 0
 --- !u!4 &1862103893
@@ -3344,7 +3269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438c85bfb364b9d41b5d6c0504e94377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jewelries: []
 --- !u!1001 &6335022699924276222
 PrefabInstance:
   m_ObjectHideFlags: 0
