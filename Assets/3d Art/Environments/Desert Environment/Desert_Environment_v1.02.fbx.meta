@@ -3,7 +3,12 @@ guid: 935705a2e82c4224e80b76f4bb1da012
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Desert_unlit_mat
+    second: {fileID: 2100000, guid: fce4dcbbdf8b507439aae866e6df8435, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
