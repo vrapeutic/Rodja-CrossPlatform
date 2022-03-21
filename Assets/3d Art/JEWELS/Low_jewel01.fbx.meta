@@ -1,29 +1,9 @@
 fileFormatVersion: 2
-guid: 62efa00f5c5a05b419123e0932a47d90
+guid: 2876bb6aa922bf244bfa449bb6ef5137
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Checker_rainbow_01
-    second: {fileID: 2100000, guid: f178d51ed3789fd4e9109b5e779f18ee, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Rodja_space_atlas_022
-    second: {fileID: 2100000, guid: 0f13ed8c248db6a41a3f77e2187d3b23, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Rodja_space_atlas_033
-    second: {fileID: 2100000, guid: e70541d332fe6d347a9c5f9d64a57e23, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 847d6fde672477a46a455b2519c06009, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -54,7 +34,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 10
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -105,7 +85,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.099999994
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
