@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4b5696e2160aaec4398adaac5865faf5
+guid: df87a925c5b9a734bbec99698498435b
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: lambert32
-    second: {fileID: 2100000, guid: 3604096c5e75d944c93265b12973c05a, type: 2}
+      name: Low_jewel02
+    second: {fileID: 2100000, guid: 9acdfa793f9844040b4b4902c9a724e4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -39,7 +39,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 2
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -90,7 +90,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.02
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

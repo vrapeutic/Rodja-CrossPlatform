@@ -4911,7 +4911,6 @@ GameObject:
   - component: {fileID: 6335022699638354021}
   - component: {fileID: 6335022699638354016}
   - component: {fileID: 6335022699638354017}
-  - component: {fileID: 6335022699638354014}
   - component: {fileID: 6335022699638354015}
   m_Layer: 0
   m_Name: Jewelry
@@ -4944,7 +4943,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6335022699638354023}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 5036417027029445191, guid: df87a925c5b9a734bbec99698498435b, type: 3}
 --- !u!23 &6335022699638354018
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4964,7 +4963,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: cebaa1290c0d60c4f9d104512a6e35e9, type: 2}
+  - {fileID: 2100000, guid: 9acdfa793f9844040b4b4902c9a724e4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5028,18 +5027,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6335022699638354014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6335022699638354023}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bf09494c9e31084f8ad6c66e6113212, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &6335022699638354015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5049,11 +5036,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6335022699638354023}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dfa35e045f483b6469798e2857eb6108, type: 3}
+  m_Script: {fileID: 11500000, guid: 438c85bfb364b9d41b5d6c0504e94377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jewelryPartical: {fileID: 0}
-  jewelrLight: {fileID: 0}
 --- !u!1 &6335022700051440911
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,10 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-
 public class WayPointsPath : MonoBehaviour
 {
-    
     [SerializeField]
     List<WayPoint> wayPoints;
     [SerializeField]
@@ -28,13 +26,10 @@ public class WayPointsPath : MonoBehaviour
         pointIndex = 0;
         CanAgentMove = false;
     }
-
     public void Constractor(List<WayPoint> _waypoints)
     {
         wayPoints = _waypoints;
     }
-
-
     public void MoveAgentToNextPoint()
     {
         if (pointIndex < wayPoints.Count)
@@ -44,8 +39,6 @@ public class WayPointsPath : MonoBehaviour
             // Debug.Log("move to next point");
         }
     }
-
-
     public void AgentArrivedAtNoneStopPoint()
     {
         if (pointIndex < wayPoints.Count - 1) pointIndex++;
@@ -59,13 +52,11 @@ public class WayPointsPath : MonoBehaviour
         else winEvent.Raise();
         Debug.Log("agent arrived");
     }
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
             MoveAgentToNextPoint();
     }
-
     private void FixedUpdate()
     {
         if (CanAgentMove)
@@ -75,7 +66,6 @@ public class WayPointsPath : MonoBehaviour
             wayPointsAgent.transform.rotation = Quaternion.Slerp(wayPointsAgent.transform.rotation, Quaternion.LookRotation(GetAgentDirection()), 0.55f);
         }
     }
-
     private Vector3 GetAgentDirection()
     {
         // Debug.Log("get agent Direction");
