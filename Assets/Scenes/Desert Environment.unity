@@ -820,7 +820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menu:
     time: 0
-    level: 2
+    level: 3
     Environment_name: Desert
     Collectable_name: red_Jewel
     Track_name: Road03
@@ -2847,6 +2847,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7462665689079858627, guid: ae400f7c2a8667644851c58d43f5dc82,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7462665689079858627, guid: ae400f7c2a8667644851c58d43f5dc82,
+        type: 3}
       propertyPath: m_TagString
       value: Road01
       objectReference: {fileID: 0}
@@ -2874,6 +2879,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7738371987953374388, guid: ae400f7c2a8667644851c58d43f5dc82,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7738371988002038600, guid: ae400f7c2a8667644851c58d43f5dc82,
         type: 3}
