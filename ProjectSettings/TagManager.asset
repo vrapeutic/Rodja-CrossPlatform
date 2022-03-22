@@ -14,6 +14,12 @@ TagManager:
   - Snow
   - Space
   - Jewelry
+  - agent
+  - Road01
+  - Road02
+  - Road03
+  - Road04
+  - Road05
   layers:
   - Default
   - TransparentFX

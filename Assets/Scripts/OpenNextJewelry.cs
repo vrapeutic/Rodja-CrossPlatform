@@ -7,21 +7,24 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class OpenNextJewelry : MonoBehaviour
 {
+   
     [SerializeField]
     List<MeshRenderer> jewelries;
     [SerializeField]
     List<XRSimpleInteractable> jewleryInteractor;
 
     int index = 1;
-    // Start is called before the first frame update
+   
     void Start()
     {
         jewelries = this.GetComponentsInChildren<MeshRenderer>().ToList();
-        jewleryInteractor = this.GetComponentsInChildren<XRSimpleInteractable>().ToList();
+
+            jewleryInteractor = this.GetComponentsInChildren<XRSimpleInteractable>().ToList();
         for (int i = 0; i < jewleryInteractor.Count - 1; i++)
         {
             jewleryInteractor[i + 1].GetComponent<Collider>().enabled = false;
         }
+       
     }
 
     public void ActivateNextJewelry()

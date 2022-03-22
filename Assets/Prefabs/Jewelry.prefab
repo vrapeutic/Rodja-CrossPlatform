@@ -4842,7 +4842,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6335022699331715066}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -4911,7 +4911,8 @@ GameObject:
   - component: {fileID: 6335022699638354021}
   - component: {fileID: 6335022699638354016}
   - component: {fileID: 6335022699638354017}
-  - component: {fileID: 6335022699638354015}
+  - component: {fileID: 574045923}
+  - component: {fileID: 8218590952629682168}
   m_Layer: 0
   m_Name: Jewelry
   m_TagString: Untagged
@@ -4951,7 +4952,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6335022699638354023}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5027,7 +5028,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6335022699638354015
+--- !u!114 &574045923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5039,6 +5040,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 438c85bfb364b9d41b5d6c0504e94377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8218590952629682168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6335022699638354023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d04a0dbd92e187b4f8f427874abcecd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialsJewel:
+  - {fileID: 2100000, guid: ad7594179ed2da44491893238e2a6953, type: 2}
+  - {fileID: 2100000, guid: 9acdfa793f9844040b4b4902c9a724e4, type: 2}
+  - {fileID: 2100000, guid: 660259f72c898d849abf9f212dbc13b4, type: 2}
 --- !u!1 &6335022700051440911
 GameObject:
   m_ObjectHideFlags: 0
