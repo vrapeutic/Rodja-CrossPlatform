@@ -4913,6 +4913,7 @@ GameObject:
   - component: {fileID: 6335022699638354017}
   - component: {fileID: 574045923}
   - component: {fileID: 8218590952629682168}
+  - component: {fileID: 6468620313823035485}
   m_Layer: 0
   m_Name: Jewelry
   m_TagString: Untagged
@@ -5056,6 +5057,19 @@ MonoBehaviour:
   - {fileID: 2100000, guid: ad7594179ed2da44491893238e2a6953, type: 2}
   - {fileID: 2100000, guid: 9acdfa793f9844040b4b4902c9a724e4, type: 2}
   - {fileID: 2100000, guid: 660259f72c898d849abf9f212dbc13b4, type: 2}
+--- !u!114 &6468620313823035485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6335022699638354023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3139bf37b9418e4da88aea7198c70aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 0.25
 --- !u!1 &6335022700051440911
 GameObject:
   m_ObjectHideFlags: 0

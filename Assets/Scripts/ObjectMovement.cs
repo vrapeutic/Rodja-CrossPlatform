@@ -17,7 +17,9 @@ public class ObjectMovement : MonoBehaviour
     bool canMove = true;
     private void Start()
     {
-        startPosition = this.gameObject.transform.position;
+        if (FindObjectOfType<MenuManger>().menu.level != 3)
+            this.enabled = false;
+            startPosition = this.gameObject.transform.position;
 
         GetRandomPosition();
         //StartCoroutine(GetNewPoint());
