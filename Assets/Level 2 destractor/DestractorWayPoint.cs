@@ -6,7 +6,7 @@ using System.Linq;
 public class DestractorWayPoint : MonoBehaviour
 {
     [SerializeField]
-    List<Transform> wayPoints;
+    List<MeshRenderer> wayPoints;
     [SerializeField]
     GameObject level2Destractor;
     [SerializeField]
@@ -19,7 +19,7 @@ public class DestractorWayPoint : MonoBehaviour
 
     void Start()
     {
-        wayPoints = this.GetComponentsInChildren<Transform>().ToList();
+        wayPoints = this.GetComponentsInChildren<MeshRenderer>().ToList();
         wayPoints.RemoveAt(0);
         CanAgentMove = false;
         MoveAgentToNextPoint();

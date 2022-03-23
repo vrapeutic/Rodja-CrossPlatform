@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectMovement : MonoBehaviour
 {
+    private Vector3 myPosition;
     private float xPosition;
     private float yPosition;
     private float zPosition;
@@ -17,6 +18,8 @@ public class ObjectMovement : MonoBehaviour
     bool canMove = true;
     private void Start()
     {
+        myPosition = this.transform.position;
+
         if (FindObjectOfType<MenuManger>().menu.level != 3)
             this.enabled = false;
         startPosition = this.gameObject.transform.position;
@@ -52,6 +55,11 @@ public class ObjectMovement : MonoBehaviour
         directionNormalized = direction.normalized;
     }
 
+    public void Stop()
+    {
+        canMove = false;
+        this.transform.position = myPosition;
+    }
     //IEnumerator GetNewPoint()
     //{
     //    if (canMove)
