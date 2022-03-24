@@ -12,3 +12,5 @@ Library/
 .vsconfig
 Packages/
 obj/
+*.apk
+*.apk

@@ -1,14 +1,12 @@
 fileFormatVersion: 2
-guid: deeb5bcb854cd1f4aada32d2acd2808f
+guid: 4509121118806da4a97fa0e79a181466
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
-  externalObjects:
+  internalIDToNameTable:
   - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert31
-    second: {fileID: 2100000, guid: 111bfc339d255b24d8d6dcd09470d11e, type: 2}
+      74: -62716426508773975
+    second: 01
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -39,7 +37,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1.5
+    globalScale: 10
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -90,7 +88,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1.5
+    globalScale: 0.254
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

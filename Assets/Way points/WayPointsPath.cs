@@ -71,7 +71,7 @@ public class WayPointsPath : MonoBehaviour
         // Debug.Log("get agent Direction");
         Vector3 dir;
         Vector3 dirNormalized;
-        dir = wayPoints[pointIndex].transform.position - wayPointsAgent.transform.position;
+        dir = wayPoints[pointIndex].myPosition - wayPointsAgent.transform.position;
         dirNormalized = dir.normalized;
         return dirNormalized;
     }

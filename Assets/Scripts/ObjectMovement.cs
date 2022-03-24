@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectMovement : MonoBehaviour
 {
+    private Vector3 myPosition;
     private float xPosition;
     private float yPosition;
     private float zPosition;
@@ -17,9 +18,11 @@ public class ObjectMovement : MonoBehaviour
     bool canMove = true;
     private void Start()
     {
+        myPosition = this.transform.position;
+
         if (FindObjectOfType<MenuManger>().menu.level != 3)
             this.enabled = false;
-            startPosition = this.gameObject.transform.position;
+        startPosition = this.gameObject.transform.position;
 
         GetRandomPosition();
         //StartCoroutine(GetNewPoint());
@@ -43,15 +46,20 @@ public class ObjectMovement : MonoBehaviour
     }
     public void GetRandomPosition()
     {
-        xPosition = Random.Range(-0.5f, 0.5f);
-        yPosition = Random.Range(-0.5f, 0.5f);
-        zPosition = Random.Range(-0.5f, 0.5f);
+        xPosition = Random.Range(-1f, 1f);
+        yPosition = Random.Range(-1f, 1f);
+        zPosition = Random.Range(-1f, 1f);
         newPosition.Set(startPosition.x + xPosition, startPosition.y + yPosition, startPosition.z + zPosition);
-       
+
         direction = newPosition - this.gameObject.transform.position;
         directionNormalized = direction.normalized;
     }
 
+    public void Stop()
+    {
+        canMove = false;
+        this.transform.position = myPosition;
+    }
     //IEnumerator GetNewPoint()
     //{
     //    if (canMove)
