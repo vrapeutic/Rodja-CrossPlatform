@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour
     [SerializeField]
     GameEvent playerLoose;
     [SerializeField]
-    float timer=0;
+    float timer = 0;
 
     private void Start()
     {
@@ -17,7 +17,10 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(maxTime!=0) timer += Time.deltaTime;
-        if(timer > maxTime) playerLoose.Raise();
+        if (maxTime != 0) timer += Time.deltaTime;
+        if (timer > maxTime)
+        {
+            playerLoose.Raise();
+        }
     }
 }

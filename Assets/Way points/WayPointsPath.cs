@@ -49,7 +49,12 @@ public class WayPointsPath : MonoBehaviour
         arrivedEvent.Raise();
         CanAgentMove = false;
         if (pointIndex < wayPoints.Count - 1) pointIndex++;
-        else winEvent.Raise();
+        else
+        {
+            winEvent.Raise();
+            TovaDataGet.ReturnTovaData().SetSessionEnd(true);
+        }
+
         Debug.Log("agent arrived");
     }
     private void Update()
