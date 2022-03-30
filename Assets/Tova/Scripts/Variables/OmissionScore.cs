@@ -31,19 +31,20 @@ public class OmissionScore : MonoBehaviour
 
     void Update()
     {
-        if (dataSet.GetActualTimeSpanState()) { 
+        if (dataSet.GetActualTimeSpanState())
+        {
             actualTimeSpanCounter += Time.deltaTime;
             dataSet.SetActualTime(actualTimeSpanCounter);
             dataSet.SetDistractingTime(GetCurrentTFD());
         }
         if (dataSet.GetSessionEnd())
         {
-            
+
             dataSet.SetTotalOmissionScore(CurrentTotalOmissionScore());
 
-            if(dataSet.GetDistractorState())
+            if (dataSet.GetDistractorState())
                 dataSet.SetDistractingScore(GetCurrentDES());
-            
+
             levelTimeCounter = true;
         }
 
@@ -58,7 +59,7 @@ public class OmissionScore : MonoBehaviour
     float GetCurrentTFD()
     {
         if (!levelTimeCounter)
-            distractingTime = Time.timeSinceLevelLoad - (GetCurrentAAS()+dataSet.GetInstructionTime());
+            distractingTime = Time.timeSinceLevelLoad - (GetCurrentAAS() + dataSet.GetInstructionTime());
         return distractingTime;
     }
     float GetCurrentDES()

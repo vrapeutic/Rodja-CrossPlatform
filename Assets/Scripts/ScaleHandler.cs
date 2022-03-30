@@ -24,8 +24,11 @@ public class ScaleHandler : MonoBehaviour
     public void ScaleJewelry()
     {
         runScaleUp = true;
+    }
+    public void CloseInteractor()
+    {
         this.gameObject.transform.GetChild(0).gameObject.SetActive(false);
 
     }
-  
+
 }

@@ -41,6 +41,7 @@ public class ObjectMovement : MonoBehaviour
     {
         if (canMove)
         {
+            TovaDataGet.ReturnTovaData().SetDistractorResponseTimer(true);
             this.gameObject.transform.position += directionNormalized * movementSpeed * Time.fixedDeltaTime;
         }
     }
@@ -57,7 +58,10 @@ public class ObjectMovement : MonoBehaviour
 
     public void Stop()
     {
+
         canMove = false;
+        TovaDataGet.ReturnTovaData().SetNoOfDistractorHitsCounter(true);
+        TovaDataGet.ReturnTovaData().SetDistractorResponseTimer(false);
         this.transform.position = myPosition;
     }
     //IEnumerator GetNewPoint()

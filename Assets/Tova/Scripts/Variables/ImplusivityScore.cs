@@ -17,7 +17,6 @@ public class ImplusivityScore : MonoBehaviour
     void Start()
     {
         dataSet = TovaDataGet.ReturnTovaData();
-
     }
 
     #region TestWithInvoker
