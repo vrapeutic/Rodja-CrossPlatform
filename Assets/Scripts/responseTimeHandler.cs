@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class responseTimeHandler : MonoBehaviour
 {
-   public void StartResponseTime()
+    private void Start()
+    {
+        TovaDataGet.ReturnTovaData().SetNoOfTriesCounter(true);
+    }
+    public void StartResponseTime()
     {
         TovaDataGet.ReturnTovaData().isResponseTimer = true;
+        TovaDataGet.ReturnTovaData().SetNoOfTriesCounter(true);
     }
 
     public void StopResponseTime()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ResponseTime : MonoBehaviour
 {
-     TovaDataSet dataSet;
+    TovaDataSet dataSet;
     [SerializeField] private float responseTimeCounter;
     [SerializeField] private float distractorResponseTimeCounter;
     [SerializeField] private int noOfTriesCounter;
@@ -16,7 +16,7 @@ public class ResponseTime : MonoBehaviour
     {
         dataSet = TovaDataGet.ReturnTovaData();
     }
-   
+
     #region TestWithInvoker
     void InvokerResponseTimeTest(bool responseTimer, int tries, int hits, bool end, bool distractorTimer)
     {
@@ -32,11 +32,11 @@ public class ResponseTime : MonoBehaviour
     void Update()
     {
 
-         if (dataSet.GetResponseTimer())
-                 responseTimeCounter += Time.deltaTime;
+        if (dataSet.GetResponseTimer())
+            responseTimeCounter += Time.deltaTime;
 
         if (dataSet.GetDistractorResponseTimer())
-                 distractorResponseTimeCounter += Time.deltaTime;
+            distractorResponseTimeCounter += Time.deltaTime;
 
         if (dataSet.GetTotalNoOfDistractorHitsCounterState())
         {
@@ -51,36 +51,36 @@ public class ResponseTime : MonoBehaviour
             dataSet.SetNoOfTriesCounter(false);
         }
         if (dataSet.GetSessionEnd())
-             {
-               
-                 dataSet.SetTotalResponseTime(TotalResponceTime());
-                 
-             }
- 
+        {
+
+            dataSet.SetTotalResponseTime(TotalResponceTime());
+
+        }
+
     }
 
     float GetCurrentResponceTime()
     {
-       
-            if (dataSet.GetTotalNumOfTries() == 0) dataSet.SetTotalNumOfTries(1);
-            currentResponseTime = (float)responseTimeCounter / (float)dataSet.GetTotalNumOfTries();
-        
+
+        if (dataSet.GetTotalNumOfTries() == 0) dataSet.SetTotalNumOfTries(1);
+        currentResponseTime = (float)responseTimeCounter / (float)dataSet.GetTotalNumOfTries();
+
         return currentResponseTime;
     }
 
     float GetCurrentDistractorResponseTime()
     {
-            if (dataSet.GetTotalNumOfDistractorHit() == 0) dataSet.SetTotalNumOfDistractorHit(1);
+        if (dataSet.GetTotalNumOfDistractorHit() == 0) dataSet.SetTotalNumOfDistractorHit(1);
         currentdistractorResponseTime = (float)distractorResponseTimeCounter / (float)dataSet.GetTotalNumOfDistractorHit();
-  
+
         return currentdistractorResponseTime;
     }
 
     float TotalResponceTime()
     {
         if (GetCurrentDistractorResponseTime() > 0)
-         return currentResponseTime=GetCurrentResponceTime()*dataSet.GetResponseWight() + GetCurrentDistractorResponseTime()*dataSet.GetResponseDistractorWight();
-        else return currentResponseTime=GetCurrentResponceTime();      
+            return currentResponseTime = GetCurrentResponceTime() * dataSet.GetResponseWight() + GetCurrentDistractorResponseTime() * dataSet.GetResponseDistractorWight();
+        else return currentResponseTime = GetCurrentResponceTime();
     }
-  
+
 }

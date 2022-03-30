@@ -45,12 +45,17 @@ public class OpenNextJewelry : MonoBehaviour
         {
             jewelries[index - 1].gameObject.GetComponentInChildren<ParticleSystem>().Play();
             jewelries[index - 1].gameObject.GetComponentInChildren<ScaleHandler>().ScaleJewelry();
+
         }
         jewelries[index].gameObject.GetComponentInChildren<Light>().enabled = true;
     }
 
     public void StopJewlMove()
     {
+        List<ObjectMovement> jewelries = this.GetComponentsInChildren<ObjectMovement>().ToList();
+
+        jewelries[index - 1].gameObject.GetComponentInChildren<ScaleHandler>().CloseInteractor();
+
         if (FindObjectOfType<MenuManger>().menu.level == 3)
         {
             List<ObjectMovement> _jewelries = this.GetComponentsInChildren<ObjectMovement>().ToList();
