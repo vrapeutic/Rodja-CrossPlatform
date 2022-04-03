@@ -30,24 +30,38 @@ public class OpenNextJewelry : MonoBehaviour
 
     public void ActivateNextJewelry()
     {
+        Debug.Log(index);
+
         if (index < jewelries.Count)
         {
-            jewelries[index].enabled = true;
+           
+            jewleryInteractor[index-1].GetComponent<Collider>().enabled = true;
+
+        }  
+       
+    }
+    public void AfterAgentArrived()
+    {
+        Debug.Log(index);
+
+        if (index < jewelries.Count)
+        {
+           jewelries[index].enabled = true;
             RunEffect();
-            jewleryInteractor[index].GetComponent<Collider>().enabled = true;
             index++;
         }
+      
     }
-
     public void RunEffect()
     {
+        jewelries[index-1].gameObject.GetComponentInChildren<Light>().enabled = true;
+
         if (index > 0)
         {
             jewelries[index - 1].gameObject.GetComponentInChildren<ParticleSystem>().Play();
             jewelries[index - 1].gameObject.GetComponentInChildren<ScaleHandler>().ScaleJewelry();
 
         }
-        jewelries[index].gameObject.GetComponentInChildren<Light>().enabled = true;
     }
 
     public void StopJewlMove()
