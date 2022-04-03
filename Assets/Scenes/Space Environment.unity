@@ -1215,7 +1215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe2cfd72f5e5ad7478426f00837ae873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 6effd05160547524fb33a8d443e4f23a, type: 2}
+  Event: {fileID: 11400000, guid: 0c0b59748e5440742a2d815e0ffb22f0, type: 2}
   response:
     m_PersistentCalls:
       m_Calls:
@@ -1371,7 +1371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe2cfd72f5e5ad7478426f00837ae873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: 0c0b59748e5440742a2d815e0ffb22f0, type: 2}
+  Event: {fileID: 11400000, guid: 6effd05160547524fb33a8d443e4f23a, type: 2}
   response:
     m_PersistentCalls:
       m_Calls:
@@ -1426,6 +1426,66 @@ MonoBehaviour:
       - m_Target: {fileID: 1219013725}
         m_TargetAssemblyTypeName: OpenNextJewelry, Assembly-CSharp
         m_MethodName: StopJewlMove
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 999493853}
+        m_TargetAssemblyTypeName: OpenNextJewelry, Assembly-CSharp
+        m_MethodName: AfterAgentArrived
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 257702774}
+        m_TargetAssemblyTypeName: OpenNextJewelry, Assembly-CSharp
+        m_MethodName: AfterAgentArrived
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 846416203}
+        m_TargetAssemblyTypeName: OpenNextJewelry, Assembly-CSharp
+        m_MethodName: AfterAgentArrived
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 106340367}
+        m_TargetAssemblyTypeName: OpenNextJewelry, Assembly-CSharp
+        m_MethodName: AfterAgentArrived
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1219013725}
+        m_TargetAssemblyTypeName: OpenNextJewelry, Assembly-CSharp
+        m_MethodName: AfterAgentArrived
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

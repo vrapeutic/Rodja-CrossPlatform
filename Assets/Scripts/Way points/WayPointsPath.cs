@@ -24,7 +24,7 @@ public class WayPointsPath : MonoBehaviour
         wayPoints = this.GetComponentsInChildren<WayPoint>().ToList();
         //wayPoints.RemoveAt(0);
         pointIndex = 0;
-        CanAgentMove = false;
+        CanAgentMove = true;
     }
     public void Constractor(List<WayPoint> _waypoints)
     {
@@ -34,7 +34,7 @@ public class WayPointsPath : MonoBehaviour
     {
         if (pointIndex < wayPoints.Count)
         {
-            moveToNextPoint.Raise();
+            arrivedEvent.Raise();
             CanAgentMove = true;
             // Debug.Log("move to next point");
         }
@@ -46,7 +46,7 @@ public class WayPointsPath : MonoBehaviour
     }
     public void AgentArrivedAtStopPoint()
     {
-        arrivedEvent.Raise();
+        moveToNextPoint.Raise();
         CanAgentMove = false;
         if (pointIndex < wayPoints.Count - 1) pointIndex++;
         else
