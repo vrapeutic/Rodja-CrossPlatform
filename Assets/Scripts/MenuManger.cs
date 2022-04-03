@@ -29,7 +29,7 @@ public class MenuManger : MonoBehaviour
     {
        
         if (FindObjectsOfType<MenuManger>().Length > 1)
-            Destroy(FindObjectsOfType<MenuManger>()[1].gameObject);
+            Destroy(FindObjectsOfType<MenuManger>()[0].gameObject);
         DontDestroyOnLoad(this.gameObject);
     }
 
