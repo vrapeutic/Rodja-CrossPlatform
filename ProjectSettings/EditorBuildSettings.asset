@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: ae0c7c70049d4c94aac607fffd93c257
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Garden Environment.unity
     guid: 20c03d327f88ede41a924b6bdc8d42c9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Snow Environment.unity
     guid: 6d441af47bdb9c2469d09a1a035c573b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Desert Environment.unity
     guid: c42d34bd2ca47f14c97e0d7a6319e0b1
   - enabled: 1
