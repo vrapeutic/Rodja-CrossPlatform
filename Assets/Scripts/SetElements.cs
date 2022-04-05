@@ -20,9 +20,9 @@ public class SetElements : MonoBehaviour
             TovaDataGet.ReturnTovaData().SetDistractorEnabled(true);
             distractor.SetActive(true);
         }
-        if (FindObjectOfType<MenuManger>().menu.Character != "boy")
-           agent.transform.GetChild(0).gameObject.SetActive(false);
-        else agent.transform.GetChild(1).gameObject.SetActive(false);
+       // if (FindObjectOfType<MenuManger>().menu.Character != "boy")
+         //  agent.transform.GetChild(0).gameObject.SetActive(false);
+       // else agent.transform.GetChild(1).gameObject.SetActive(false);
 
         foreach (GameObject road in roads)
         {
