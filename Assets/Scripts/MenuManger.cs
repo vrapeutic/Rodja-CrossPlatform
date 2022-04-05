@@ -16,7 +16,7 @@ public class MenuVariables
     public string Collectable_name = "desert_jewel";
     public string Track_name = "Road01";
     public string Character = "boy";
-    public string language = "eng";
+    public string language = "";
 }
 
 public class MenuManger : MonoBehaviour
