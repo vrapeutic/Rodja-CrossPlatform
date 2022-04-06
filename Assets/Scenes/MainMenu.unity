@@ -1290,7 +1290,7 @@ MonoBehaviour:
     level: 1
     Environment_name: Desert
     Collectable_name: blue_Jewel
-    Track_name: Road01
+    Track_name: Road02
     Character: boy
     language: 
 --- !u!4 &395375229
@@ -4956,9 +4956,9 @@ MonoBehaviour:
   m_EnableInputActions: 1
   m_PoseProvider: {fileID: 0}
   m_ControllerNode: 5
-  m_SelectUsage: 6
-  m_ActivateUsage: 6
-  m_UIPressUsage: 6
+  m_SelectUsage: 4
+  m_ActivateUsage: 4
+  m_UIPressUsage: 4
   m_AxisToPressThreshold: 0.1
   m_ModelPrefab: {fileID: 0}
   m_ModelTransform: {fileID: 0}

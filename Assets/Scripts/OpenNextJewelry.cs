@@ -55,6 +55,7 @@ public class OpenNextJewelry : MonoBehaviour
     public void RunEffect()
     {
         jewelries[index].gameObject.GetComponentInChildren<Light>().enabled = true;
+        jewelries[index-1].gameObject.GetComponentInChildren<Light>().enabled = false;
 
         if (index > 0)
         {
