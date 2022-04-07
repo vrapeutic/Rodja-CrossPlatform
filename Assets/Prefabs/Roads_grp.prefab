@@ -8528,6 +8528,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -8641,6 +8661,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -8754,6 +8794,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -8867,6 +8927,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -8975,6 +9055,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -9098,6 +9198,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -9211,6 +9331,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -9324,6 +9464,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -9432,6 +9592,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -9545,6 +9725,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -9658,6 +9858,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -9771,6 +9991,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -9879,6 +10119,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -9987,6 +10247,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -10100,6 +10380,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -10213,6 +10513,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -10326,6 +10646,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -10434,6 +10774,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -10547,6 +10907,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -10660,6 +11040,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -10768,6 +11168,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -10876,6 +11296,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -10989,6 +11429,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -11102,6 +11562,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -11215,6 +11695,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -11323,6 +11823,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -11436,6 +11956,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -11544,6 +12084,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -11657,6 +12217,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -11770,6 +12350,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -11883,6 +12483,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988002038600}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -11996,6 +12616,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -12109,6 +12749,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -12222,6 +12882,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -12335,6 +13015,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -12448,6 +13148,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987465535434}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -12561,6 +13281,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -12669,6 +13409,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988059544311}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -12782,6 +13542,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -12895,6 +13675,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371988706653178}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
@@ -13008,6 +13808,26 @@ PrefabInstance:
       propertyPath: m_OnHoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 7738371987578057003}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveAgentToNextPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: WayPointsPath, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335022700051440909, guid: a1404c4b87af61046b2f7299768c9310,
+        type: 3}
+      propertyPath: m_OnSelectEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6335022699638354015, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
     - {fileID: 6335022699638354014, guid: a1404c4b87af61046b2f7299768c9310, type: 3}
