@@ -48,7 +48,7 @@ public class ObjectMovement : MonoBehaviour
     public void GetRandomPosition()
     {
         xPosition = Random.Range(-1f, 1f);
-        yPosition = Random.Range(-1f, 1f);
+        yPosition = Random.Range(0.5f, 1f);
         zPosition = Random.Range(-1f, 1f);
         newPosition.Set(startPosition.x + xPosition, startPosition.y + yPosition, startPosition.z + zPosition);
 

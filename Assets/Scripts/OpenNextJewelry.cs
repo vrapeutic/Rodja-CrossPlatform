@@ -34,11 +34,11 @@ public class OpenNextJewelry : MonoBehaviour
 
         if (index < jewelries.Count)
         {
-           
-            jewleryInteractor[index-1].GetComponent<Collider>().enabled = true;
+            jewleryInteractor[index - 1].GetComponent<Collider>().enabled = true;
+            jewelries[index-1].GetComponent<ObjectMovement>().enabled = true;
 
-        }  
-       
+        }
+
     }
     public void AfterAgentArrived()
     {
@@ -46,16 +46,16 @@ public class OpenNextJewelry : MonoBehaviour
 
         if (index < jewelries.Count)
         {
-           jewelries[index].enabled = true;
+            jewelries[index].enabled = true;
             RunEffect();
             index++;
         }
-      
+
     }
     public void RunEffect()
     {
         jewelries[index].gameObject.GetComponentInChildren<Light>().enabled = true;
-        jewelries[index-1].gameObject.GetComponentInChildren<Light>().enabled = false;
+        jewelries[index - 1].gameObject.GetComponentInChildren<Light>().enabled = false;
 
         if (index > 0)
         {
