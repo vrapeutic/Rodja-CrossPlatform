@@ -47,9 +47,9 @@ public class ObjectMovement : MonoBehaviour
     }
     public void GetRandomPosition()
     {
-        xPosition = Random.Range(-1f, 1f);
-        yPosition = Random.Range(0.5f, 1f);
-        zPosition = Random.Range(-1f, 1f);
+        xPosition = Random.Range(-1.5f, 1.5f);
+        yPosition = Random.Range(0.5f, 2f);
+        zPosition = Random.Range(-1.5f, 1.5f);
         newPosition.Set(startPosition.x + xPosition, startPosition.y + yPosition, startPosition.z + zPosition);
 
         direction = newPosition - this.gameObject.transform.position;
