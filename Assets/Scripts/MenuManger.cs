@@ -68,8 +68,8 @@ public class MenuManger : MonoBehaviour
         menu.Collectable_name = _name;
     }
 
-    public void NextLevel(int _index)
+    public void NextLevel()
     {
-        SceneManager.LoadScene(_index);
+        SceneManager.LoadScene(menu.Environment_name);
     }
 }
