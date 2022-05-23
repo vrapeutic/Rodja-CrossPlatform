@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] GameEvent sessionEnds;
     public void EndSession()
     {
-        TovaDataGet.ReturnTovaData().SetSessionEnd(true);
+        sessionEnds.Raise();
         Invoke("PrintStatistics", 2f);
     }
     private void PrintStatistics()

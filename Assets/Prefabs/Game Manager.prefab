@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4462409992776480001}
   - component: {fileID: 4462409992776480003}
   - component: {fileID: 4462409992776480007}
+  - component: {fileID: 4814828796207975229}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -215,6 +216,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   distractor: {fileID: 0}
+  agent: {fileID: 0}
 --- !u!114 &4462409992776480007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,4 +293,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  invokedOnce: 0
+--- !u!114 &4814828796207975229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4462409992776480013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe2cfd72f5e5ad7478426f00837ae873, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 250bfb2bb2ce55746abd580244ace8d9, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls: []
   invokedOnce: 0

@@ -5,13 +5,28 @@ using UnityEngine;
 
 public class InGameMenu : MonoBehaviour
 {
-   public void BackToMainMenu()
-   {
-        SceneManager.LoadScene(0);
-   }
+    [SerializeField] GameEvent sessionEnds;
+
+    public void BackToMainMenu()
+    {
+        sessionEnds.Raise();
+        Invoke("LoadScene", 2f);
+       
+    }
 
     public void ExitGame()
     {
+        sessionEnds.Raise();
+        Invoke("ExitProject", 2f);
+    }
+
+    public void LoadScene()
+    {
+        SceneManager.LoadScene(0);
+    }
+    public void ExitProject()
+    {
         Application.Quit();
+
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] AudioSource BackgroundSource;
+    //[SerializeField] AudioSource BackgroundSource;
     [SerializeField] AudioSource _audioSource;
 
     private void Start()
