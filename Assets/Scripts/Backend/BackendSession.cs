@@ -14,12 +14,12 @@ public class BackendSession : MonoBehaviour
     public DataCollection MyStats;
     int sessionId;
     public int moduleID = 13;//every module has unique id
-    public  int patient_id;
-    public string auth="";
+    public int patient_id;
+    public string auth = "";
     [SerializeField]
     InputField input;
     [HideInInspector]
-    public  string currentRoomId;
+    public string currentRoomId;
     public static string startTimeSession = "yyyy/MM/dd hh:mm:ss tt"; // use System.DateTime.Now(start time) when level start to getstart time
     [HideInInspector]
     public string endTimeNow = "yyyy/MM/dd hh:mm:ss tt"; //use System.DateTime.Now(end time) when level end to get end time
@@ -35,29 +35,29 @@ public class BackendSession : MonoBehaviour
     }
     public void SetPatient()
     {
-       patient_id = int.Parse(input.text);
 
+        patient_id = int.Parse(input.text);
     }
     public int GetPatient()
     {
         return patient_id;
     }
-  
+
     void Start()
     {
         startTimeSession = System.DateTime.Now.ToString("yyyy/MM/dd hh:mm:ss tt");
 
     }
     #region SessionStart
-   public void StartSession()
+    public void StartSession()
     {
-        StartCoroutine(SendSessionElements(patient_id, moduleID,auth));
+        StartCoroutine(SendSessionElements(patient_id, moduleID, auth));
 
     }
-   
-    IEnumerator SendSessionElements(int patient_id , int moduleId,string auth)
+
+    IEnumerator SendSessionElements(int patient_id, int moduleId, string auth)
     {
-        yield return StartCoroutine(jsonAPIS.SendSessionElements(patient_id, moduleID,auth));
+        yield return StartCoroutine(jsonAPIS.SendSessionElements(patient_id, moduleID, auth));
         sessionElements = jsonAPIS.SessioResponseElements();
 
         SartGame(sessionElements.id, sessionElements.room_id);
@@ -67,7 +67,7 @@ public class BackendSession : MonoBehaviour
         sessionId = getId;
         currentRoomId = getRoom;
         if (currentRoomId != null)
-         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);//Load nextScene    
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);//Load nextScene    
 
     }
     #endregion
@@ -80,7 +80,7 @@ public class BackendSession : MonoBehaviour
     }
     public IEnumerator SendStats()
     {
-        yield return StartCoroutine(jsonAPIS.SendSessionData( auth));
+        yield return StartCoroutine(jsonAPIS.SendSessionData(auth));
         CurrentStats = jsonAPIS.SendStatsResponse();
     }
     #endregion
