@@ -3,21 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
+[CreateAssetMenu]
 public class DataCollection : ScriptableObject
 {
-    [MenuItem("Assets/Create/MyStats")]
-    public static void CreateMyAsset()
-    {
-        DataCollection asset = ScriptableObject.CreateInstance<DataCollection>();
-
-        string name = UnityEditor.AssetDatabase.GenerateUniqueAssetPath("Assets/MyStats.asset");
-        AssetDatabase.CreateAsset(asset, name);
-        AssetDatabase.SaveAssets();
-
-        EditorUtility.FocusProjectWindow();
-
-        Selection.activeObject = asset;
-    }
     public string session_start_time = "yyyy/MM/dd hh:mm:ss tt";
     public string attempt_start_time = "yyyy/MM/dd hh:mm:ss tt";
     public string attempt_end_time = "yyyy/MM/dd hh:mm:ss tt";

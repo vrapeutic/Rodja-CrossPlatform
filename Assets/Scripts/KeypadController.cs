@@ -38,5 +38,6 @@ public class KeypadController : MonoBehaviour
             idInputField.text = number;
 
         }
+       
     }
 }

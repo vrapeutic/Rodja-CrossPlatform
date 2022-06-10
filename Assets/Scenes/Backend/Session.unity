@@ -407,6 +407,8 @@ PrefabInstance:
     - {fileID: 1882064122290450800, guid: 37d147a3b7f427344b0d5736249e60df, type: 3}
     - {fileID: 1389971628556154159, guid: 37d147a3b7f427344b0d5736249e60df, type: 3}
     - {fileID: 4345388678536854889, guid: 37d147a3b7f427344b0d5736249e60df, type: 3}
+    - {fileID: -5159496622370285147, guid: 37d147a3b7f427344b0d5736249e60df, type: 3}
+    - {fileID: 2503835537141786470, guid: 37d147a3b7f427344b0d5736249e60df, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 37d147a3b7f427344b0d5736249e60df, type: 3}
 --- !u!20 &1286026484 stripped
 Camera:
