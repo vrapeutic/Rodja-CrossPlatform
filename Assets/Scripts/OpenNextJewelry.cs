@@ -9,73 +9,72 @@ public class OpenNextJewelry : MonoBehaviour
 {
 
     [SerializeField]
-    List<MeshRenderer> jewelries;
+    List<WayPoint> jewelries;
     [SerializeField]
     List<XRSimpleInteractable> jewleryInteractor;
+    [SerializeField] IntVariable index;
 
-    int index = 1;
 
     void Start()
     {
-        jewelries = this.GetComponentsInChildren<MeshRenderer>().ToList();
-        Debug.Log(jewelries.Count);
-
+        jewelries = this.GetComponentsInChildren<WayPoint>().ToList();
         jewleryInteractor = this.GetComponentsInChildren<XRSimpleInteractable>().ToList();
         for (int i = 0; i < jewleryInteractor.Count - 1; i++)
         {
             jewleryInteractor[i + 1].GetComponent<Collider>().enabled = false;
+            jewelries[i + 1].transform.GetChild(0).gameObject.SetActive(false);
+
         }
-
+        AfterAgentArrived();
     }
-
+    //on arrived at point 
     public void ActivateNextJewelry()
-    {
-        Debug.Log(index);
-
-        if (index < jewelries.Count)
+    {     
+        Debug.Log("jewelry index : "+index.Value);
+        if (index.Value < jewelries.Count)
         {
-            jewleryInteractor[index - 1].GetComponent<Collider>().enabled = true;
-            jewelries[index-1].GetComponent<ObjectMovement>().enabled = true;
-
+            jewleryInteractor[index.Value-1].GetComponent<Collider>().enabled = true;
+            jewelries[index.Value-1].GetComponent<ScaleHandler>().enabled = true;
         }
-
     }
+    //the index for upcoming jewelry
+    //on move to next on click
     public void AfterAgentArrived()
     {
-        Debug.Log(index);
-
-        if (index < jewelries.Count)
+        int diff = 0;//for non stop points
+        if (index.Value < jewelries.Count)
         {
-            jewelries[index].enabled = true;
-            RunEffect();
-            index++;
+            if (!jewelries[index.Value].gameObject.GetComponent<WayPoint>().isStopPoint)
+            {
+                diff = 1;
+                if (index.Value + diff >= jewelries.Count) return;
+                if (!jewelries[index.Value+diff].gameObject.GetComponent<WayPoint>().isStopPoint) diff = 2;
+            }
+            Debug.Log("Index Value: "+index.Value);
+            Debug.Log("Index Value +diff: "+index.Value+diff);
+            if (index.Value + diff >= jewelries.Count) return;
+            jewelries[index.Value+diff].transform.GetChild(0).gameObject.SetActive(true);
+            jewelries[index.Value + diff].gameObject.GetComponentInChildren<Light>().enabled = true;
+            if (index.Value < 1) return;
+            jewelries[index.Value - 1].gameObject.GetComponentInChildren<Light>().enabled = false;
+            jewelries[index.Value - 1].gameObject.GetComponentInChildren<ParticleSystem>().Play();
+            jewelries[index.Value - 1].transform.GetChild(0).gameObject.SetActive(false);
         }
 
     }
-    public void RunEffect()
-    {
-        jewelries[index].gameObject.GetComponentInChildren<Light>().enabled = true;
-        jewelries[index - 1].gameObject.GetComponentInChildren<Light>().enabled = false;
 
-        if (index > 0)
-        {
-            jewelries[index - 1].gameObject.GetComponentInChildren<ParticleSystem>().Play();
-            jewelries[index - 1].gameObject.GetComponentInChildren<ScaleHandler>().ScaleJewelry();
-
-        }
-    }
 
     public void StopJewlMove()
     {
         List<ObjectMovement> jewelries = this.GetComponentsInChildren<ObjectMovement>().ToList();
 
-        jewelries[index - 1].gameObject.GetComponentInChildren<ScaleHandler>().CloseInteractor();
+        jewelries[index.Value-1].gameObject.GetComponentInChildren<ScaleHandler>().CloseInteractor();
 
         if (FindObjectOfType<MenuManger>().menu.level == 3)
         {
             List<ObjectMovement> _jewelries = this.GetComponentsInChildren<ObjectMovement>().ToList();
-            _jewelries[index - 1].gameObject.GetComponent<ObjectMovement>().Stop();
-            Debug.Log(index + " " + _jewelries.Count);
+            _jewelries[index.Value-1].gameObject.GetComponent<ObjectMovement>().Stop();
+            Debug.Log(index.Value - 1 + " " + _jewelries.Count);
         }
     }
 }

@@ -9,8 +9,7 @@ public class WayPoint : MonoBehaviour
     // Start is called before the first frame update
     public Vector3 myPosition;
     WayPointsPath wayPointParent;
-    [SerializeField]
-    bool isStopPoint;
+    public bool isStopPoint;
 
     void Start()
     {

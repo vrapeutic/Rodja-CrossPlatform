@@ -16,55 +16,58 @@ public class WayPointsPath : MonoBehaviour
     [SerializeField]
     GameEvent winEvent;
     [SerializeField]
-    GameEvent moveToNextPoint;
-    int pointIndex;
-    bool CanAgentMove;
+    GameEvent moveToNextPointEvent;
+    bool canAgentMove;
+    [SerializeField] BoolValue canPlay;
+    [SerializeField] IntVariable sustainedValue;
+    [SerializeField] StringVariable typeOfAttention;
+    [SerializeField] IntVariable index;
+    private void Awake()
+    {
+        index.Value = 0;
+    }
     void Start()
     {
         wayPoints = this.GetComponentsInChildren<WayPoint>().ToList();
+        DetermineStopPoints();
         //wayPoints.RemoveAt(0);
-        pointIndex = 0;
-        CanAgentMove = true;
+        canAgentMove= true;
     }
-    public void Constractor(List<WayPoint> _waypoints)
+    private void Update()
     {
-        wayPoints = _waypoints;
+        if (Input.GetKeyDown(KeyCode.Space)&&canPlay.Value)
+            MoveAgentToNextPoint();
     }
+    //when pressing
     public void MoveAgentToNextPoint()
     {
-        if (pointIndex < wayPoints.Count)
+        if (index.Value < wayPoints.Count)
         {
-            arrivedEvent.Raise();
-            CanAgentMove = true;
+            moveToNextPointEvent.Raise();
+            canAgentMove = true;
             // Debug.Log("move to next point");
         }
     }
     public void AgentArrivedAtNoneStopPoint()
     {
-        if (pointIndex < wayPoints.Count - 1) pointIndex++;
-        else CanAgentMove = false;
+        if (index.Value < wayPoints.Count - 1) index.Value++;
+        else canAgentMove = false;
     }
     public void AgentArrivedAtStopPoint()
     {
-        moveToNextPoint.Raise();
-        CanAgentMove = false;
-        if (pointIndex < wayPoints.Count - 1) pointIndex++;
+        canAgentMove = false;
+        if (index.Value < wayPoints.Count - 1) { index.Value++; }
         else
         {
             winEvent.Raise();
-            TovaDataGet.ReturnTovaData().SetSessionEnd(true);
         }
-
+        arrivedEvent.Raise();
         Debug.Log("agent arrived");
     }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-            MoveAgentToNextPoint();
-    }
+
     private void FixedUpdate()
     {
-        if (CanAgentMove)
+        if (canAgentMove&& canPlay.Value)
         {
             wayPointsAgent.transform.position += GetAgentDirection() * agentSpeed * Time.fixedDeltaTime;
             //wayPointsAgent.transform.LookAt(GetAgentDirection());
@@ -76,8 +79,37 @@ public class WayPointsPath : MonoBehaviour
         // Debug.Log("get agent Direction");
         Vector3 dir;
         Vector3 dirNormalized;
-        dir = wayPoints[pointIndex].myPosition - wayPointsAgent.transform.position;
+        dir = wayPoints[index.Value].myPosition - wayPointsAgent.transform.position;
         dirNormalized = dir.normalized;
         return dirNormalized;
     }
+    #region Determine Stop Points
+    void DetermineStopPoints()
+    {
+        if (typeOfAttention.Value == "sustained")
+        {
+            if (sustainedValue.Value == 20) MakeStopPoints(5);
+            else if (sustainedValue.Value == 40) MakeStopPoints(10);
+            else if (sustainedValue.Value == 60) MakeStopPoints(15);
+        }
+        else MakeStopPoints(10);
+    }
+    void MakeStopPoints(int No)
+    {
+        if (No == 5) for (int i = 0; i < 15; i++)
+            {
+                if (i % 3 == 0) wayPoints[i].isStopPoint = true;
+                else wayPoints[i].isStopPoint = false;
+            }
+        else if (No == 10) for (int i = 0; i < 15; i++)
+            {
+                if (i % 3 == 2) wayPoints[i].isStopPoint = false;
+                else wayPoints[i].isStopPoint = true;
+            }
+        else for (int i = 0; i < 15; i++)
+            {
+                wayPoints[i].isStopPoint = true;
+            }
+    }
+    #endregion
 }

@@ -4,19 +4,32 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public void EndSession()
+    [SerializeField] GameEvent onEndSuccessfully;
+    [SerializeField] BoolValue canPlay;
+    [SerializeField] StringVariable typeOfAttention;
+    [SerializeField] IntVariable sustainedValue;
+    int collectedJewelries=0;
+    int targetCollectedJewelries;
+    private void Start()
     {
-        TovaDataGet.ReturnTovaData().SetSessionEnd(true);
-        Invoke("PrintStatistics", 2f);
+        canPlay.Value = true;
+        if (typeOfAttention.Value == "sustained")
+        {
+            if (sustainedValue.Value == 20) targetCollectedJewelries=5;
+            else if (sustainedValue.Value == 40) targetCollectedJewelries=10;
+            else if (sustainedValue.Value == 60) targetCollectedJewelries=15;
+        }
+        else targetCollectedJewelries=10;
     }
-    private void PrintStatistics()
+
+    public void CollectingJewelry()
     {
-        Debug.Log("Response Time: " + TovaDataGet.ReturnTovaData().GetTotalResponseTime());
-        Debug.Log("Impulsivity Score: " + TovaDataGet.ReturnTovaData().GetTotalImpsScore());
-        Debug.Log("Omission Score: " + TovaDataGet.ReturnTovaData().GetTotalOmissionScore());
-        Debug.Log("DES: " + TovaDataGet.ReturnTovaData().GetTotalDES());
-        Debug.Log("Total num of destractor: " + TovaDataGet.ReturnTovaData().GetTotalNumOfDistractorHit());
-        Debug.Log("Total num of Targets: " + TovaDataGet.ReturnTovaData().GetTotalNumOfTargets());
-        Debug.Log("Total num of tries: " + TovaDataGet.ReturnTovaData().GetTotalNumOfTries());
+        collectedJewelries++;
+        if (collectedJewelries >= targetCollectedJewelries)
+        {
+            Debug.Log("should End successfully");
+            onEndSuccessfully.Raise();
+            canPlay.Value = false;
+        }    
     }
 }

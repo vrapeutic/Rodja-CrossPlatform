@@ -4,22 +4,19 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Character
-  - Environment
-  - SkyDome
-  - Distractor
-  - ArrowPath
-  - Desert
-  - Garden
-  - Snow
-  - Space
-  - Jewelry
   - agent
-  - Road01
-  - Road02
-  - Road03
-  - Road04
   - Road05
+  - Road03
+  - Road01
+  - SelectiveDistractor
+  - Road02
+  - Road04
+  - Bird
+  - Watch Box
+  - Looking Detector
+  - RedJewel
+  - BlueJewel
+  - GoldJewel
   layers:
   - Default
   - TransparentFX

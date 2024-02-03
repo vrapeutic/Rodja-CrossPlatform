@@ -10,12 +10,12 @@ public class JewelsMaterials : MonoBehaviour
 
     private void Awake()
     {
+        currentMat = materialsJewel[1];
         foreach(Material mat in materialsJewel)
         {
             if (mat.name == FindObjectOfType<MenuManger>().menu.Collectable_name)
                 currentMat = mat;
         }
-        ;
         GetComponent<MeshRenderer>().material = currentMat;
 
     }

@@ -7,16 +7,16 @@ public class ScaleHandler : MonoBehaviour
 {
     int index = 0;
     Vector3 scaleChange;
-    bool runScaleUp = false;
+    bool runScaleUp = true;
     // Start is called before the first frame update
     void Start()
     {
-        scaleChange = new Vector3(0.5f, 0.5f, 0.5f);
+        scaleChange = new Vector3(.5f, .5f, .5f);
 
     }
     private void Update()
     {
-        if (runScaleUp && this.gameObject.transform.localScale.x <= 1.5f)
+        if (runScaleUp && this.gameObject.transform.localScale.x <= 2f)
         {
             this.gameObject.transform.localScale += scaleChange * Time.deltaTime;
         }

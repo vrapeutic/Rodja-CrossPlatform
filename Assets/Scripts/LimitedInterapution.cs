@@ -21,7 +21,6 @@ public class LimitedInterapution : MonoBehaviour
 
                 if (hitsCounter >= 3)
                 { 
-                    TovaDataGet.ReturnTovaData().SetHitsCounterEnabled(true);
                     hitsCounter = 0;
                 }
             }
