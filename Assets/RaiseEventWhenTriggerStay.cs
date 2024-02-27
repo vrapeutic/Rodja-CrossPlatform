@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RaiseEventWhenTriggerStay : MonoBehaviour
 {
-    float stayedTime = 0;
+    float stayedTime ;
     [SerializeField]GameEvent eventToRaise;
     [SerializeField] float TimeToStay;
     [SerializeField] string wantedTag;
@@ -12,6 +12,7 @@ public class RaiseEventWhenTriggerStay : MonoBehaviour
 
     private void OnEnable()
     {
+        stayedTime = 0;
         canRaiseEvent = true;
             
     }
