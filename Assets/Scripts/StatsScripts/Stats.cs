@@ -73,7 +73,7 @@ public class Stats : MonoBehaviour
         Debug.Log("DistractorFollowingTime " + DistractorsName[TimeFollowingDistractors.Count - 1] + ":" + TimeFollowingDistractors[TimeFollowingDistractors.Count - 1]);
     }
 
-    public void RegisteringDistractorFollowingTime()
+    public void RegisteringDistractorFollowingTime()//in case of adaptive
     {
         if (!canPlay.Value) return;
         TimeFollowingDistractors.Add((System.DateTime.Now - registerDistractorTime).TotalSeconds);
