@@ -17,16 +17,13 @@ public class DistractorManager : MonoBehaviour
     [SerializeField] GameEvent OnAdaptiveTask1;
     [SerializeField] GameEvent OnAdaptiveTask2;
     [SerializeField] GameEvent OnAdaptiveTask3;
-    bool JewelsCollected;
 
     // Start is called before the first frame update
     void Start()
     {
-        JewelsCollected = false;
         if (typeOfAttention.Value == "selective") SelectiveAttention();
         else if (typeOfAttention.Value == "adaptive") AdaptiveAttention();
     }
-  
 
     async void SelectiveAttention()
     {
@@ -46,25 +43,14 @@ public class DistractorManager : MonoBehaviour
         int rand = RandomNember();
         //Debug.Log("AdaptiveAttention"+rand);
         await new WaitForSeconds(20);
-        if (canPlay.Value)
-        {
-            if (rand == 1) OnAdaptiveTask1.Raise();
-            else if (rand == 2) OnAdaptiveTask2.Raise();
-            else if (rand == 3) OnAdaptiveTask3.Raise();
-        }
+        if (rand == 1) OnAdaptiveTask1.Raise();
+        else if (rand == 2) OnAdaptiveTask2.Raise();
+        else if (rand == 3) OnAdaptiveTask3.Raise();
     }
 
     int RandomNember()
     {
-        int maxRange;
-        if (JewelsCollected||typeOfAttention.Value== "selective") maxRange = noOfDistractors.Value + 1;
-        else maxRange = 2;
+        int maxRange = noOfDistractors.Value + 1;
         return Random.Range(1, maxRange);
     }
-
-    public void EnableOfferingJewelsDistractor()
-    {
-        JewelsCollected = true;
-    }
-
 }

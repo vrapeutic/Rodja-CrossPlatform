@@ -17,7 +17,6 @@ TagManager:
   - RedJewel
   - BlueJewel
   - GoldJewel
-  - Hand
   layers:
   - Default
   - TransparentFX

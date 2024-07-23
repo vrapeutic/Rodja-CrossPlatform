@@ -5,16 +5,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameEvent onEndSuccessfully;
-    [SerializeField] GameEvent onEndUnSuccessfully;
     [SerializeField] BoolValue canPlay;
     [SerializeField] StringVariable typeOfAttention;
     [SerializeField] IntVariable sustainedValue;
-    int collectedJewels;
+    int collectedJewelries=0;
     int targetCollectedJewelries;
     private void Start()
     {
         canPlay.Value = true;
-        collectedJewels = 0;
         if (typeOfAttention.Value == "sustained")
         {
             if (sustainedValue.Value == 20) targetCollectedJewelries=5;
@@ -26,28 +24,12 @@ public class GameManager : MonoBehaviour
 
     public void CollectingJewelry()
     {
-        collectedJewels++;
-        if (collectedJewels >= targetCollectedJewelries)
+        collectedJewelries++;
+        if (collectedJewelries >= targetCollectedJewelries)
         {
+            Debug.Log("should End successfully");
             onEndSuccessfully.Raise();
-            StopPlaying();
+            canPlay.Value = false;
         }    
     }
-
-    public void EndUnSeccessfully()
-    {
-        onEndUnSuccessfully.Raise();
-        StopPlaying();
-    }
-
-    public void StopPlaying()
-    {
-        canPlay.Value = false;
-    }
-
-    public void ContinuePlaying()
-    {
-        canPlay.Value = true;
-    }
-
 }

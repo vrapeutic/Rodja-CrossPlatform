@@ -10,11 +10,10 @@ public class CollectedJewels : MonoBehaviour
     [SerializeField] IntVariable goldJewelsNo;
     string lastJewelTag="";
     // Start is called before the first frame update
-    void Awake()
+    void Start()
     {
         if (typeOfAttention.Value != "adaptive") Destroy(this);
         redJewelsNo.Value = blueJewelsNo.Value = goldJewelsNo.Value = 0;
-
     }
 
     private void OnTriggerEnter(Collider other)

@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b0f525a33a4bee42918718170406d61, type: 3}
   m_Name: TypeOfAttention
   m_EditorClassIdentifier: 
-  Value: sustained
+  Value: adaptive

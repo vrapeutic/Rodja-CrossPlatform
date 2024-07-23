@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323e16ec3aa27d14dbd142aeab303a95, type: 3}
   m_Name: BlueJewelNo
   m_EditorClassIdentifier: 
-  Value: 3
+  Value: 0

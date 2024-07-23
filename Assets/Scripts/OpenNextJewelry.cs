@@ -50,13 +50,15 @@ public class OpenNextJewelry : MonoBehaviour
                 if (index.Value + diff >= jewelries.Count) return;
                 if (!jewelries[index.Value+diff].gameObject.GetComponent<WayPoint>().isStopPoint) diff = 2;
             }
+            Debug.Log("Index Value: "+index.Value);
+            Debug.Log("Index Value +diff: "+index.Value+diff);
+            if (index.Value + diff >= jewelries.Count) return;
+            jewelries[index.Value+diff].transform.GetChild(0).gameObject.SetActive(true);
+            jewelries[index.Value + diff].gameObject.GetComponentInChildren<Light>().enabled = true;
             if (index.Value < 1) return;
             jewelries[index.Value - 1].gameObject.GetComponentInChildren<Light>().enabled = false;
             jewelries[index.Value - 1].gameObject.GetComponentInChildren<ParticleSystem>().Play();
             jewelries[index.Value - 1].transform.GetChild(0).gameObject.SetActive(false);
-            if (index.Value + diff >= jewelries.Count) return;
-            jewelries[index.Value+diff].transform.GetChild(0).gameObject.SetActive(true);
-            jewelries[index.Value + diff].gameObject.GetComponentInChildren<Light>().enabled = true;
         }
 
     }
