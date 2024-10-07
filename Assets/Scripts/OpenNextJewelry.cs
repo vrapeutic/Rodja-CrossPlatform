@@ -30,8 +30,8 @@ public class OpenNextJewelry : MonoBehaviour
     //on arrived at point 
     public void ActivateNextJewelry()
     {     
-        Debug.Log("jewelry index : "+index.Value);
-        if (index.Value < jewelries.Count)
+        Debug.Log("next jewelry index : "+index.Value);
+        if (index.Value <= jewelries.Count)
         {
             jewleryInteractor[index.Value-1].GetComponent<Collider>().enabled = true;
             jewelries[index.Value-1].GetComponent<ScaleHandler>().enabled = true;
@@ -41,28 +41,38 @@ public class OpenNextJewelry : MonoBehaviour
     //on move to next on click
     public void AfterAgentArrived()
     {
+        Debug.Log("AfterAgentArrived");
         int diff = 0;//for non stop points
         if (index.Value < jewelries.Count)
         {
+            Debug.Log("AfterAgentArrived index.Value < jewelries.Count "+"index.value "+index.Value);
+            PlayLastJewelryEffect();
             if (!jewelries[index.Value].gameObject.GetComponent<WayPoint>().isStopPoint)
             {
                 diff = 1;
                 if (index.Value + diff >= jewelries.Count) return;
                 if (!jewelries[index.Value+diff].gameObject.GetComponent<WayPoint>().isStopPoint) diff = 2;
             }
-            Debug.Log("Index Value: "+index.Value);
-            Debug.Log("Index Value +diff: "+index.Value+diff);
+            if (index.Value < 1) return;
+            Debug.Log("last jewelry index : " + (index.Value-1));
+            //PlayLastJewelryEffect();
             if (index.Value + diff >= jewelries.Count) return;
             jewelries[index.Value+diff].transform.GetChild(0).gameObject.SetActive(true);
             jewelries[index.Value + diff].gameObject.GetComponentInChildren<Light>().enabled = true;
-            if (index.Value < 1) return;
-            jewelries[index.Value - 1].gameObject.GetComponentInChildren<Light>().enabled = false;
-            jewelries[index.Value - 1].gameObject.GetComponentInChildren<ParticleSystem>().Play();
-            jewelries[index.Value - 1].transform.GetChild(0).gameObject.SetActive(false);
+        }
+        else if (index.Value== jewelries.Count)
+        {
+            PlayLastJewelryEffect();
         }
 
     }
 
+    void PlayLastJewelryEffect()
+    {
+        jewelries[index.Value - 1].gameObject.GetComponentInChildren<Light>().enabled = false;
+        jewelries[index.Value - 1].gameObject.GetComponentInChildren<ParticleSystem>().Play();
+        jewelries[index.Value - 1].transform.GetChild(0).gameObject.SetActive(false);
+    }
 
     public void StopJewlMove()
     {

@@ -20,13 +20,11 @@ public class Stats : MonoBehaviour
     System.DateTime registerDistractorTime;
     [SerializeField] FloatVariable timeFollowingSelectiveDistractor;
     TextWriter tw;
-    string FileName;
+    string collectedData = "";
+
     private void Start()
     {
-        Debug.Log(System.DateTime.Now.ToString());
-        //RegisteringStartTimeForTargeting();
-        FileName = Application.persistentDataPath + "/" + DateTime.Now.ToFileTime() + ".csv";
-        Debug.Log(FileName);
+
     }
 
     public void RegisteringStartTimeForTargeting()
@@ -73,7 +71,7 @@ public class Stats : MonoBehaviour
         Debug.Log("DistractorFollowingTime " + DistractorsName[TimeFollowingDistractors.Count - 1] + ":" + TimeFollowingDistractors[TimeFollowingDistractors.Count - 1]);
     }
 
-    public void RegisteringDistractorFollowingTime()//in case of adaptive
+    public void RegisteringDistractorFollowingTime()
     {
         if (!canPlay.Value) return;
         TimeFollowingDistractors.Add((System.DateTime.Now - registerDistractorTime).TotalSeconds);
@@ -90,9 +88,9 @@ public class Stats : MonoBehaviour
         }
     }
 
-    public void WriteCSV()
+    public void WriteCSV1()
     {
-        tw = new StreamWriter(FileName, true);
+        //tw = new StreamWriter(FileName, true);
         tw.WriteLine("Archeeko"+", "+ level.Value);
         tw.WriteLine("Target Starting Time" + ", " + "Target Hitting Time "+", "+ "Interruption Durations");
         for (int i = 0; i < endingTimes.Count; i++)
@@ -105,5 +103,28 @@ public class Stats : MonoBehaviour
             tw.WriteLine(DistractorsName[i].ToFixedString(25,' ')+", "+ TimeFollowingDistractors[i].ToString());
         }
         tw.Close();
+    }
+
+    public void WriteCSV()
+    {
+        collectedData += "Rodja" + ", " + level.Value + Environment.NewLine;
+        Debug.Log("!!!collectedData1 :" + collectedData);
+        collectedData += "Target Starting Time" + ", " + "Target Hitting Time " + ", " + "Interruption Durations" + ", " +
+            "Distractor Name          " + ", " + "Time Following It" + Environment.NewLine;
+        Debug.Log("!!!collectedData2 :" + collectedData);
+        int arrLength = endingTimes.Count > DistractorsName.Count ? endingTimes.Count : DistractorsName.Count;
+        Debug.Log("!!!arrLength: " + arrLength + " DistractorsName.Count " + DistractorsName.Count + " endingTimes.Count " + endingTimes.Count);
+        for (int i = 0; i < arrLength; i++)
+        {
+            if (i < endingTimes.Count && i < TimeFollowingDistractors.Count)
+                collectedData += startingTimes[i].ToString() + ", " + endingTimes[i].ToString() + ", " + interruptionDurations[i].ToString() + ", " +
+                    DistractorsName[i].ToFixedString(25, ' ') + ", " + TimeFollowingDistractors[i].ToString() + Environment.NewLine;
+            else if (i < endingTimes.Count) collectedData += startingTimes[i].ToString() + ", " + endingTimes[i].ToString() + ", " + interruptionDurations[i].ToString() + Environment.NewLine;
+            else if (i < TimeFollowingDistractors.Count) collectedData += " , , , " + DistractorsName[i].ToFixedString(25, ' ') + ", " + TimeFollowingDistractors[i].ToString() + Environment.NewLine;
+        }
+        Debug.Log("!!!collectedData3 :" + collectedData);
+        CSVWriter csv = new CSVWriter();
+        GetComponent<CSVWriter>().WriteCSV(collectedData);
+        Debug.Log("!!WriteCSV");
     }
 }

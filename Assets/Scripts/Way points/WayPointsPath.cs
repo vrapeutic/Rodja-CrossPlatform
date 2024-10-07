@@ -47,6 +47,12 @@ public class WayPointsPath : MonoBehaviour
             canAgentMove = true;
             // Debug.Log("move to next point");
         }
+        else if (index.Value == wayPoints.Count)
+        {
+            canAgentMove = false;
+            moveToNextPointEvent.Raise();
+            // Debug.Log("move to next point");
+        }
     }
     public void AgentArrivedAtNoneStopPoint()
     {
@@ -56,10 +62,10 @@ public class WayPointsPath : MonoBehaviour
     public void AgentArrivedAtStopPoint()
     {
         canAgentMove = false;
-        if (index.Value < wayPoints.Count - 1) { index.Value++; }
+        if (index.Value < wayPoints.Count ) { index.Value++; }
         else
         {
-            winEvent.Raise();
+            // winEvent.Raise();
         }
         arrivedEvent.Raise();
         Debug.Log("agent arrived");

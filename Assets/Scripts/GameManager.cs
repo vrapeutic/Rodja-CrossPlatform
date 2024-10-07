@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] GameEvent onEndSuccessfully;
+    [SerializeField] GameEvent onEndUnSuccessfully;
     [SerializeField] BoolValue canPlay;
     [SerializeField] StringVariable typeOfAttention;
     [SerializeField] IntVariable sustainedValue;
-    int collectedJewelries=0;
+    int collectedJewels;
     int targetCollectedJewelries;
     private void Start()
     {
         canPlay.Value = true;
+        collectedJewels = 0;
         if (typeOfAttention.Value == "sustained")
         {
             if (sustainedValue.Value == 20) targetCollectedJewelries=5;
@@ -24,12 +27,43 @@ public class GameManager : MonoBehaviour
 
     public void CollectingJewelry()
     {
-        collectedJewelries++;
-        if (collectedJewelries >= targetCollectedJewelries)
+        collectedJewels++;
+        Debug.Log("collectedJewels= "+collectedJewels);
+        if (collectedJewels >= targetCollectedJewelries)
         {
-            Debug.Log("should End successfully");
-            onEndSuccessfully.Raise();
-            canPlay.Value = false;
+            Debug.Log("collectedJewels= " + collectedJewels+ " targetCollectedJewelries= "+targetCollectedJewelries);
+            StartCoroutine(EndingSuccessfullyIEnum());
         }    
     }
+    IEnumerator EndingSuccessfullyIEnum()
+    {
+        yield return new WaitForSeconds(1);
+        onEndSuccessfully.Raise();
+        StopPlaying();
+        StartCoroutine(EndingAttemptInum());
+    }
+
+    public void EndUnSeccessfully()
+    {
+        onEndUnSuccessfully.Raise();
+        StopPlaying();
+        StartCoroutine(EndingAttemptInum());
+    }
+
+    public void StopPlaying()
+    {
+        canPlay.Value = false;
+    }
+
+    IEnumerator EndingAttemptInum()
+    {
+        yield return new WaitForSeconds(5);
+        if (SceneManager.GetSceneByBuildIndex(0).name == "SystemLobby") Application.Quit();
+    }
+
+    public void ContinuePlaying()
+    {
+        canPlay.Value = true;
+    }
+
 }
