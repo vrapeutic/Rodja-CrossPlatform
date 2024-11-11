@@ -15,4 +15,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("MainMenu");
     }
+
+
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }

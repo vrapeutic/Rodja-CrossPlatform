@@ -18,6 +18,7 @@ public class DistractorManager : MonoBehaviour
     [SerializeField] GameEvent OnAdaptiveTask2;
     [SerializeField] GameEvent OnAdaptiveTask3;
     bool JewelsCollected;
+    int lastRand = 0 ;
 
     // Start is called before the first frame update
     void Start()
@@ -56,10 +57,15 @@ public class DistractorManager : MonoBehaviour
 
     int RandomNember()
     {
-        int maxRange;
-        if (JewelsCollected||typeOfAttention.Value== "selective") maxRange = noOfDistractors.Value + 1;
-        else maxRange = 2;
-        return Random.Range(1, maxRange);
+        if (noOfDistractors.Value == 1) return 1;
+        int maxRange = noOfDistractors.Value + 1;
+        int rand = Random.Range(1, maxRange);
+        while (rand == lastRand)
+        {
+            rand = Random.Range(1, maxRange);
+        }
+        lastRand = rand;
+        return rand;
     }
 
     public void EnableOfferingJewelsDistractor()
