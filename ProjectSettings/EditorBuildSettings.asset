@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
+    path: Assets/Scenes/keybad lobby no system.unity
+    guid: 75e76b81597f6084484db4f5bdc8c76c
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: a347de612997da54198e68e940c07105
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SystemLobby.unity
     guid: 22469849f30d77c4fb8e668196a8ee85
   - enabled: 1

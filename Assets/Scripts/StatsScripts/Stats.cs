@@ -54,7 +54,7 @@ public class Stats : MonoBehaviour
     //if we are adaptive we will optain the distracting time from difference between raise distractor event and complation of distractor
     public void RegisteringDistractorName(string name)
     {
-
+        if ((level.Value == 4 || level.Value == 5 || level.Value == 6) && (name == "Visitors_waving_adaptive")) return;
         DistractorsName.Add(name);
         Debug.Log("RegisteringDistractorName :"+ name);
         registerDistractorTime = System.DateTime.Now;
@@ -73,7 +73,8 @@ public class Stats : MonoBehaviour
 
     public void RegisteringDistractorFollowingTime()
     {
-        if (!canPlay.Value) return;
+        Debug.Log("RegisteringDistractorFollowingTime");
+        //if (!canPlay.Value) return;
         TimeFollowingDistractors.Add((System.DateTime.Now - registerDistractorTime).TotalSeconds);
         Debug.Log("DistractorFollowingTime " + DistractorsName[TimeFollowingDistractors.Count - 1] + ":" + TimeFollowingDistractors[TimeFollowingDistractors.Count - 1]);
     }

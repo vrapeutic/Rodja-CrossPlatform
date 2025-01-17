@@ -49,6 +49,7 @@ public class DistractorManager : MonoBehaviour
         await new WaitForSeconds(20);
         if (canPlay.Value)
         {
+            Debug.Log("canPlay.Value = "+canPlay.Value);
             if (rand == 1) OnAdaptiveTask1.Raise();
             else if (rand == 2) OnAdaptiveTask2.Raise();
             else if (rand == 3) OnAdaptiveTask3.Raise();

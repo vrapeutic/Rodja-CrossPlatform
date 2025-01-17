@@ -15,9 +15,11 @@ public class CSVWriter:MonoBehaviour
     [SerializeField] BoolValue isReqToGenerateCSVFile;
     [SerializeField] BridgePluginInitializer bridge;
     [SerializeField] StringVariable fileName;
+    [SerializeField] BoolValue canSavestatsToHeadset;
 
     public void WriteCSV(string CollectedStats)
     {
+        if (!canSavestatsToHeadset.Value) return;
         if (!Permission.HasUserAuthorizedPermission(Permission.ExternalStorageWrite))
         {
             Permission.RequestUserPermission(Permission.ExternalStorageWrite);

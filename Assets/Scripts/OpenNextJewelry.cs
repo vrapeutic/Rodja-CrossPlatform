@@ -41,11 +41,11 @@ public class OpenNextJewelry : MonoBehaviour
     //on move to next on click
     public void AfterAgentArrived()
     {
-        Debug.Log("AfterAgentArrived");
+        //Debug.Log("AfterAgentArrived");
         int diff = 0;//for non stop points
         if (index.Value < jewelries.Count)
         {
-            Debug.Log("AfterAgentArrived index.Value < jewelries.Count "+"index.value "+index.Value);
+            //Debug.Log("AfterAgentArrived index.Value < jewelries.Count "+"index.value "+index.Value);
             PlayLastJewelryEffect();
             if (!jewelries[index.Value].gameObject.GetComponent<WayPoint>().isStopPoint)
             {
@@ -54,7 +54,7 @@ public class OpenNextJewelry : MonoBehaviour
                 if (!jewelries[index.Value+diff].gameObject.GetComponent<WayPoint>().isStopPoint) diff = 2;
             }
             if (index.Value < 1) return;
-            Debug.Log("last jewelry index : " + (index.Value-1));
+            //Debug.Log("last jewelry index : " + (index.Value-1));
             //PlayLastJewelryEffect();
             if (index.Value + diff >= jewelries.Count) return;
             jewelries[index.Value+diff].transform.GetChild(0).gameObject.SetActive(true);

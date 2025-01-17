@@ -33,6 +33,14 @@ public class BridgePluginInitializer : MonoBehaviour
 
     public void SendIntent(string data)
     {
-        javaObj.Call("sendIntent", data);
+        try
+        {
+            javaObj.Call("sendIntent", data);
+        }
+        catch (System.Exception e)
+        {
+            Debug.Log(e);
+            //throw;
+        }
     }
 }

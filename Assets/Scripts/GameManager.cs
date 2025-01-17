@@ -38,32 +38,43 @@ public class GameManager : MonoBehaviour
     IEnumerator EndingSuccessfullyIEnum()
     {
         yield return new WaitForSeconds(1);
-        onEndSuccessfully.Raise();
         StopPlaying();
+        onEndSuccessfully.Raise();
         StartCoroutine(EndingAttemptInum());
     }
 
     public void EndUnSeccessfully()
     {
-        onEndUnSuccessfully.Raise();
         StopPlaying();
+        onEndUnSuccessfully.Raise();
         StartCoroutine(EndingAttemptInum());
     }
 
     public void StopPlaying()
     {
         canPlay.Value = false;
+        Debug.Log("StopPlaying");
     }
 
     IEnumerator EndingAttemptInum()
     {
         yield return new WaitForSeconds(5);
-        if (SceneManager.GetSceneByBuildIndex(0).name == "SystemLobby") Application.Quit();
+        if (GetSceneName(0) == "SystemLobby") Application.Quit();
     }
 
     public void ContinuePlaying()
     {
         canPlay.Value = true;
+        Debug.Log("ContinuePlaying");
+    }
+    
+    string GetSceneName(int index)
+    {
+        string path = SceneUtility.GetScenePathByBuildIndex(index);
+        int slash = path.LastIndexOf('/');
+        string name = path.Substring(slash + 1);
+        int dot = name.LastIndexOf('.');
+        return name.Substring(0, dot);
     }
 
 }
